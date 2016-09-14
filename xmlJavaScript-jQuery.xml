@@ -1,0 +1,1800 @@
+<?xml version="1.0"?><!-- Copyright MPSOFTWARE -->
+<javascript>
+  <modules>
+    <module name="jQuery 1.7.2" disabled="False">
+      <interfaces>
+        <interface name="jQuery" extends="Object">
+          <functions>
+            <function name="jQuery" returns="jQuery">
+              <description>This function accepts a string containing a CSS selector which is then used to match a set of elements.</description>
+              <params>
+                <param name="expression" type="String" optional="False">
+                  <description>An expression to search with.</description>
+                </param>
+                <param name="context" type="Element" optional="True">
+                  <description>A DOM Element, Document or jQuery to use as context</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery" returns="jQuery">
+              <description>Create DOM elements on-the-fly from the provided String of raw HTML.</description>
+              <params>
+                <param name="html" type="String" optional="False">
+                  <description>A string of HTML to create on the fly.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery" returns="jQuery">
+              <description>Wrap jQuery functionality around a single or multiple DOM Element(s).</description>
+              <params>
+                <param name="elements" type="Element" optional="False">
+                  <description>DOM element(s) to be encapsulated by a jQuery object.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery" returns="jQuery">
+              <description>A shorthand for $(document).ready().</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute when the DOM is ready.</description>
+                </param>
+              </params>
+            </function>
+            <function name="each" returns="jQuery">
+              <description>Execute a function within the context of every matched element.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The callback to execute for each matched element.
+
+function callback(index, domElement) {
+  this; // this == domElement
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="size" returns="Number">
+              <description>The number of elements in the jQuery object.</description>
+            </function>
+            <function name="eq" returns="jQuery">
+              <description>Reduce the set of matched elements to a single element.</description>
+              <params>
+                <param name="position" type="Number" optional="False">
+                  <description>The index of the element to select.</description>
+                </param>
+              </params>
+            </function>
+            <function name="get" returns="Array">
+              <description>Access all matched DOM elements.</description>
+            </function>
+            <function name="get" returns="Element">
+              <description>Access a single matched DOM element at a specified index in the matched set.</description>
+              <params>
+                <param name="index" type="Number" optional="False">
+                  <description>Access the element in the Nth position.</description>
+                </param>
+              </params>
+            </function>
+            <function name="index" returns="Number">
+              <description>Searches every matched element for the object and returns the index of the element, if found, starting with zero.</description>
+              <params>
+                <param name="subject" type="Element" optional="False">
+                  <description>Object to search for.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.fn.extend" returns="jQuery">
+              <description>Extends the jQuery element set to provide new methods (used to make a typical jQuery plugin).</description>
+              <params>
+                <param name="object" type="Object" optional="False">
+                  <description>The object that will be merged into the jQuery object.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.extend" returns="jQuery">
+              <description>Extends the jQuery object itself.</description>
+              <params>
+                <param name="object" type="Object" optional="False">
+                  <description>The object that will be merged into the jQuery object.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.noConflict" returns="jQuery">
+              <description>Run this function to give control of the $ variable back to whichever library first implemented it.</description>
+            </function>
+            <function name="jQuery.noConflict" returns="jQuery">
+              <description>Revert control of both the $ and jQuery variables to their original owners. '''Use with discretion.'''</description>
+              <params>
+                <param name="extreme" type="Boolean" optional="False">
+                  <description>Set to true to enable the extreme rollback of jQuery and it's variables.</description>
+                </param>
+              </params>
+            </function>
+            <function name="attr" returns="Object">
+              <description>Access a property on the first matched element. This method makes it easy to retrieve a property value from the first matched element. If the element does not have an attribute with such a name, undefined is returned.</description>
+              <params>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the property to access.</description>
+                </param>
+              </params>
+            </function>
+            <function name="attr" returns="jQuery">
+              <description>Set a key/value object as properties to all matched elements.</description>
+              <params>
+                <param name="properties" type="Map" optional="False">
+                  <description>Key/value pairs to set as object properties.</description>
+                </param>
+              </params>
+            </function>
+            <function name="attr" returns="jQuery">
+              <description>Set a single property to a value, on all matched elements.</description>
+              <params>
+                <param name="key" type="String" optional="False">
+                  <description>The name of the property to set.</description>
+                </param>
+                <param name="value" type="Object" optional="False">
+                  <description>The value to set the property to.</description>
+                </param>
+              </params>
+            </function>
+            <function name="attr" returns="jQuery">
+              <description>Set a single property to a computed value, on all matched elements.</description>
+              <params>
+                <param name="key" type="String" optional="False">
+                  <description>The name of the property to set.</description>
+                </param>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function returning the value to set. Scope: Current element, argument: Index of current element
+function callback(indexArray) {
+  // indexArray[0] == position in the jQuery object
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="removeAttr" returns="jQuery">
+              <description>Remove an attribute from each of the matched elements.</description>
+              <params>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the property to remove.</description>
+                </param>
+              </params>
+            </function>
+            <function name="addClass" returns="jQuery">
+              <description>Adds the specified class(es) to each of the set of matched elements.</description>
+              <params>
+                <param name="class" type="String" optional="False">
+                  <description>One or more CSS classes to add to the elements, these are separated by spaces.</description>
+                </param>
+              </params>
+            </function>
+            <function name="removeClass" returns="jQuery">
+              <description>Removes all or the specified class(es) from the set of matched elements.</description>
+              <params>
+                <param name="class" type="String" optional="False">
+                  <description>One or more CSS classes to remove from the elements, these are separated by spaces.</description>
+                </param>
+              </params>
+            </function>
+            <function name="toggleClass" returns="jQuery">
+              <description>Adds the specified class if it is not present, removes the specified class if it is present.</description>
+              <params>
+                <param name="class" type="String" optional="False">
+                  <description>A CSS class to toggle on the elements.</description>
+                </param>
+              </params>
+            </function>
+            <function name="html" returns="String">
+              <description>Get the html contents (innerHTML) of the first matched element. This property is not available on XML documents (although it will work for XHTML documents).</description>
+            </function>
+            <function name="html" returns="jQuery">
+              <description>Set the html contents of every matched element. This property is not available on XML documents (although it will work for XHTML documents).</description>
+              <params>
+                <param name="val" type="string" optional="False">
+                  <description>Set the html contents to the specified value.</description>
+                </param>
+              </params>
+            </function>
+            <function name="text" returns="String">
+              <description>Get the combined text contents of all matched elements.</description>
+            </function>
+            <function name="text" returns="jQuery">
+              <description>Set the text contents of all matched elements.</description>
+              <params>
+                <param name="val" type="String" optional="False">
+                  <description>The text value to set the contents of the element to.</description>
+                </param>
+              </params>
+            </function>
+            <function name="val" returns="String">
+              <description>Get the content of the value attribute of the first matched element.</description>
+            </function>
+            <function name="val" returns="jQuery">
+              <description>Set the value attribute of every matched element.</description>
+              <params>
+                <param name="val" type="String" optional="False">
+                  <description>The value to set on the matched element.</description>
+                </param>
+              </params>
+            </function>
+            <function name="val" returns="jQuery">
+              <description>Checks, or selects, all the radio buttons, checkboxes, and select options that match the set of values.</description>
+              <params>
+                <param name="val" type="Array" optional="False">
+                  <description>The set of values to check/select.</description>
+                </param>
+              </params>
+            </function>
+            <function name="eq" returns="jQuery">
+              <description>Reduce the set of matched elements to a single element.</description>
+              <params>
+                <param name="index" type="Integer" optional="False">
+                  <description>The index of the element in the jQuery object.</description>
+                </param>
+              </params>
+            </function>
+            <function name="hasClass" returns="Boolean">
+              <description>Checks the current selection against a class and returns true, if at least one element of the selection has the given class.</description>
+              <params>
+                <param name="class" type="String" optional="False">
+                  <description>The class to match.</description>
+                </param>
+              </params>
+            </function>
+            <function name="filter" returns="jQuery">
+              <description>Removes all elements from the set of matched elements that do not match the specified expression(s).</description>
+              <params>
+                <param name="expr" type="Expression" optional="False">
+                  <description>An expression to pass into the filter</description>
+                </param>
+              </params>
+            </function>
+            <function name="filter" returns="jQuery">
+              <description>Removes all elements from the set of matched elements that does not match the specified function.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to pass into the filter
+
+function callback(indexInJQueryObject) {
+  var keepItBoolean = true;
+
+  this; // dom element
+
+  return keepItBoolean;
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="is" returns="Boolean">
+              <description>Checks the current selection against an expression and returns true, if at least one element of the selection fits the given expression.</description>
+              <params>
+                <param name="expr" type="String" optional="False">
+                  <description>The expression with which to filter</description>
+                </param>
+              </params>
+            </function>
+            <function name="map" returns="jQuery">
+              <description>Translate a set of elements in the jQuery object into another set of values in an array (which may, or may not, be elements).</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute on each element in the set.
+function callback(index, domElement) {
+  var replacement;
+
+  this; // also dom element
+
+  // replacement == null : delete spot
+  // replacement == array : insert the elements of the array
+  // else replace the spot with replacement
+  return replacement;
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="not" returns="jQuery">
+              <description>Removes elements matching the specified expression from the set of matched elements.</description>
+              <params>
+                <param name="expr" type="String" optional="False">
+                  <description>An expression with which to remove matching elements, an element to remove from the set or a set of elements to remove from the jQuery set of matched elements.</description>
+                </param>
+              </params>
+            </function>
+            <function name="slice" returns="jQuery">
+              <description>Selects a subset of the matched elements.</description>
+              <params>
+                <param name="start" type="Integer" optional="False">
+                  <description>Where to start the subset. The first element is at zero. Can be negative to start from the end of the selection.</description>
+                </param>
+                <param name="end" type="Integer" optional="True">
+                  <description>Where to end the subset. If unspecified, ends at the end of the selection.</description>
+                </param>
+              </params>
+            </function>
+            <function name="add" returns="jQuery">
+              <description>Adds more elements, matched by the given expression, to the set of matched elements.</description>
+              <params>
+                <param name="expr" type="String" optional="False">
+                  <description>An expression whose matched elements are added for String, a string of HTML to create on the fly for DOMElement or one or more Elements to add if an Array.</description>
+                </param>
+              </params>
+            </function>
+            <function name="children" returns="jQuery">
+              <description>Get a set of elements containing all of the unique immediate children of each of the matched set of elements.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the child Elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="contents" returns="jQuery">
+              <description>Find all the child nodes inside the matched elements (including text nodes), or the content document, if the element is an iframe.</description>
+            </function>
+            <function name="find" returns="jQuery">
+              <description>Searches for all elements that match the specified expression. This method is a good way to find additional descendant elements with which to process.</description>
+              <params>
+                <param name="expr" type="String" optional="False">
+                  <description>An expression to search with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="next" returns="jQuery">
+              <description>Get a set of elements containing the unique next siblings of each of the given set of elements.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression with which to filter the returned set.</description>
+                </param>
+              </params>
+            </function>
+            <function name="nextAll" returns="jQuery">
+              <description>Find all sibling elements after the current element.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the next Elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="parent" returns="jQuery">
+              <description>Get a set of elements containing the unique parents of the matched set of elements.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the parents with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="parents" returns="jQuery">
+              <description>Get a set of elements containing the unique ancestors of the matched set of elements (except for the root element).
+
+The matched elements can be filtered with an optional expression.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the ancestors with</description>
+                </param>
+              </params>
+            </function>
+            <function name="prev" returns="jQuery">
+              <description>Get a set of elements containing the unique previous siblings of each of the matched set of elements.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the previous Elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="prevAll" returns="jQuery">
+              <description>Find all sibling elements before the current element.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the previous Elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="siblings" returns="jQuery">
+              <description>Get a set of elements containing all of the unique siblings of each of the matched set of elements.
+
+Can be filtered with an optional expressions.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>An expression to filter the sibling Elements with</description>
+                </param>
+              </params>
+            </function>
+            <function name="andSelf" returns="jQuery">
+              <description>Add the previous selection to the current selection.</description>
+            </function>
+            <function name="end" returns="jQuery">
+              <description>Revert the most recent 'destructive' operation, changing the set of matched elements to its previous state (right before the destructive operation).</description>
+            </function>
+            <function name="html" returns="String">
+              <description>Get the html contents (innerHTML) of the first matched element. This property is not available on XML documents (although it will work for XHTML documents).</description>
+            </function>
+            <function name="html" returns="jQuery">
+              <description>Set the html contents of every matched element. This property is not available on XML documents (although it will work for XHTML documents).</description>
+              <params>
+                <param name="val" type="string" optional="False">
+                  <description>Set the html contents to the specified value.</description>
+                </param>
+              </params>
+            </function>
+            <function name="text" returns="String">
+              <description>Get the combined text contents of all matched elements.</description>
+            </function>
+            <function name="text" returns="jQuery">
+              <description>Set the text contents of all matched elements.</description>
+              <params>
+                <param name="val" type="String" optional="False">
+                  <description>The text value to set the contents of the element to.</description>
+                </param>
+              </params>
+            </function>
+            <function name="append" returns="jQuery">
+              <description>Append content to the inside of every matched element.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content to append to the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="appendTo" returns="jQuery">
+              <description>Append all of the matched elements to another, specified, set of elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>target to which the content will be appended.</description>
+                </param>
+              </params>
+            </function>
+            <function name="prepend" returns="jQuery">
+              <description>Prepend content to the inside of every matched element.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content to prepend to the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="prependTo" returns="jQuery">
+              <description>Prepend all of the matched elements to another, specified, set of elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>target to which the content will be prepended.</description>
+                </param>
+              </params>
+            </function>
+            <function name="after" returns="jQuery">
+              <description>Insert content after each of the matched elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content to insert after each target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="before" returns="jQuery">
+              <description>Insert content before each of the matched elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content to insert before each target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="insertAfter" returns="jQuery">
+              <description>Insert all of the matched elements after another, specified, set of elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content after which the selected element(s) is inserted.</description>
+                </param>
+              </params>
+            </function>
+            <function name="insertBefore" returns="jQuery">
+              <description>Insert all of the matched elements before another, specified, set of elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content after which the selected element(s) is inserted.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrap" returns="jQuery">
+              <description>Wrap all matched elements with a structure of other elements.</description>
+              <params>
+                <param name="html" type="String" optional="False">
+                  <description>A string of HTML that will be created on the fly and wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrap" returns="jQuery">
+              <description>Wrap all matched elements with a structure of other elements.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>A DOM element that will be wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrapAll" returns="jQuery">
+              <description>Wrap all the elements in the matched set into a single wrapper element.</description>
+              <params>
+                <param name="html" type="String" optional="False">
+                  <description>A string of HTML that will be created on the fly and wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrapAll" returns="jQuery">
+              <description>Wrap all the elements in the matched set into a single wrapper element.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>A DOM element that will be wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrapInner" returns="jQuery">
+              <description>Wrap the inner child contents of each matched element (including text nodes) with an HTML structure.</description>
+              <params>
+                <param name="html" type="String" optional="False">
+                  <description>A string of HTML that will be created on the fly and wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="wrapInner" returns="jQuery">
+              <description>Wrap the inner child contents of each matched element (including text nodes) with a DOM element.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>A DOM element that will be wrapped around the target.</description>
+                </param>
+              </params>
+            </function>
+            <function name="replaceWith" returns="jQuery">
+              <description>Replaces all matched elements with the specified HTML or DOM elements.</description>
+              <params>
+                <param name="content" type="String" optional="False">
+                  <description>Content to replace the matched elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="replaceAll" returns="jQuery">
+              <description>Replaces the elements matched by the specified selector with the matched elements.</description>
+              <params>
+                <param name="selector" type="Selector" optional="False">
+                  <description>The elements to find and replace the matched elements with.</description>
+                </param>
+              </params>
+            </function>
+            <function name="empty" returns="jQuery">
+              <description>Remove all child nodes from the set of matched elements.</description>
+            </function>
+            <function name="remove" returns="jQuery">
+              <description>Removes all matched elements from the DOM.</description>
+              <params>
+                <param name="expr" type="String" optional="True">
+                  <description>A jQuery expression to filter the set of elements to be removed.</description>
+                </param>
+              </params>
+            </function>
+            <function name="clone" returns="jQuery">
+              <description>Clone matched DOM Elements and select the clones.</description>
+            </function>
+            <function name="clone" returns="jQuery">
+              <description>Clone matched DOM Elements, and all their event handlers, and select the clones.</description>
+              <params>
+                <param name="true" type="Boolean" optional="False">
+                  <description>Set to true to enable cloning of event handlers.</description>
+                </param>
+              </params>
+            </function>
+            <function name="css" returns="String">
+              <description>Return a style property on the first matched element.</description>
+              <params>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the property to access.</description>
+                </param>
+              </params>
+            </function>
+            <function name="css" returns="jQuery">
+              <description>Set a key/value object as style properties to all matched elements.</description>
+              <params>
+                <param name="properties" type="Map" optional="False">
+                  <description>Key/value pairs to set as style properties.</description>
+                </param>
+              </params>
+            </function>
+            <function name="css" returns="jQuery">
+              <description>Set a single style property to a value on all matched elements.</description>
+              <params>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the property to set.</description>
+                </param>
+                <param name="value" type="String" optional="False">
+                  <description>The value to set the property to.</description>
+                </param>
+              </params>
+            </function>
+            <function name="offset" returns="Object">
+              <description>Get the current offset of the first matched element relative to the viewport.</description>
+            </function>
+            <function name="height" returns="Integer">
+              <description>Get the current computed, pixel, height of the first matched element.</description>
+            </function>
+            <function name="height" returns="jQuery">
+              <description>Set the CSS height of every matched element.</description>
+              <params>
+                <param name="val" type="String" optional="False">
+                  <description>Set the CSS 'height' property to the specified value.</description>
+                </param>
+              </params>
+            </function>
+            <function name="width" returns="Integer">
+              <description>Get the current computed, pixel, width of the first matched element.</description>
+            </function>
+            <function name="width" returns="jQuery">
+              <description>Set the CSS width of every matched element.</description>
+              <params>
+                <param name="val" type="String" optional="False">
+                  <description>Set the CSS 'width' property to the specified value.</description>
+                </param>
+              </params>
+            </function>
+            <function name="ready" returns="jQuery">
+              <description>Binds a function to be executed whenever the DOM is ready to be traversed and manipulated.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>The function to be executed when the DOM is ready.
+
+function callback(jQueryReference) {
+  this; // document
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="bind" returns="jQuery">
+              <description>Binds a handler to a particular event (like click) for each matched element.  Can also bind custom events.</description>
+              <params>
+                <param name="type" type="String" optional="False">
+                  <description>An event type</description>
+                </param>
+                <param name="data" type="Object" optional="True">
+                  <description>Additional data passed to the event handler as event.data</description>
+                </param>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the event on each of the set of matched elements
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="one" returns="jQuery">
+              <description>Binds a handler to a particular event to be executed &amp;lt;i&amp;gt;once&amp;lt;/i&amp;gt; for each matched element.</description>
+              <params>
+                <param name="type" type="String" optional="False">
+                  <description>An event type</description>
+                </param>
+                <param name="data" type="Object" optional="True">
+                  <description>Additional data passed to the event handler as event.data</description>
+                </param>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the specified event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="trigger" returns="jQuery">
+              <description>Trigger a type of event on every matched element.</description>
+              <params>
+                <param name="type" type="String" optional="False">
+                  <description>An event type to trigger.</description>
+                </param>
+                <param name="data" type="Array" optional="True">
+                  <description>Additional data to pass as arguments (after the event object) to the event handler.</description>
+                </param>
+              </params>
+            </function>
+            <function name="triggerHandler" returns="jQuery">
+              <description>This particular method triggers all bound event handlers on an element (for a specific event type) WITHOUT executing the browsers default actions.</description>
+              <params>
+                <param name="type" type="String" optional="False">
+                  <description>An event type to trigger.</description>
+                </param>
+                <param name="data" type="Array" optional="True">
+                  <description>Additional data to pass as arguments (after the event object) to the event handler.</description>
+                </param>
+              </params>
+            </function>
+            <function name="unbind" returns="jQuery">
+              <description>This does the opposite of bind, it removes bound events from each of the matched elements.</description>
+              <params>
+                <param name="type" type="String" optional="True">
+                  <description>An event type to unbind.</description>
+                </param>
+                <param name="data" type="Function" optional="True">
+                  <description>A function to unbind from the event on each of the set of matched elements.</description>
+                </param>
+              </params>
+            </function>
+            <function name="hover" returns="jQuery">
+              <description>Simulates hovering (moving the mouse on, and off, an object). This is a custom method which provides an 'in' to a frequent task.</description>
+              <params>
+                <param name="over" type="Function" optional="False">
+                  <description>The function to fire when the mouse is moved over a matched element.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+                <param name="out" type="Function" optional="False">
+                  <description>The function to fire when the mouse is moved off of a matched element.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="toggle" returns="jQuery">
+              <description>Toggle between two function calls every other click.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>The function to execute on every even click.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+                <param name="fn" type="Function" optional="False">
+                  <description>The function to execute on every odd click.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="blur" returns="jQuery">
+              <description>Triggers the blur event of each matched element.</description>
+            </function>
+            <function name="blur" returns="jQuery">
+              <description>Bind a function to the blur event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the blur event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="change" returns="jQuery">
+              <description>Triggers the change event of each matched element.</description>
+            </function>
+            <function name="change" returns="jQuery">
+              <description>Binds a function to the change event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the change event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="click" returns="jQuery">
+              <description>Triggers the click event of each matched element.</description>
+            </function>
+            <function name="click" returns="jQuery">
+              <description>Binds a function to the click event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the click event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="dblclick" returns="jQuery">
+              <description>Triggers the dblclick event of each matched element.</description>
+            </function>
+            <function name="dblclick" returns="jQuery">
+              <description>Binds a function to the dblclick event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>The function to bind to the dblclick event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="error" returns="jQuery">
+              <description>Triggers the error event of each matched element.</description>
+            </function>
+            <function name="error" returns="jQuery">
+              <description>Binds a function to the error event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>An event handler function to bind to the error event.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="focus" returns="jQuery">
+              <description>Triggers the focus event of each matched element.</description>
+            </function>
+            <function name="focus" returns="jQuery">
+              <description>Binds a function to the focus event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the focus event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="keydown" returns="jQuery">
+              <description>Triggers the keydown event of each matched element.</description>
+            </function>
+            <function name="keydown" returns="jQuery">
+              <description>Bind a function to the keydown event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the keydown event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="keypress" returns="jQuery">
+              <description>Triggers the keypress event of each matched element.</description>
+            </function>
+            <function name="keypress" returns="jQuery">
+              <description>Binds a function to the keypress event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the keypress event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="keyup" returns="jQuery">
+              <description>Triggers the keyup event of each matched element.</description>
+            </function>
+            <function name="keyup" returns="jQuery">
+              <description>Bind a function to the keyup event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the keyup event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="load" returns="jQuery">
+              <description>Binds a function to the load event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the load event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="mousedown" returns="jQuery">
+              <description>Binds a function to the mousedown event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the mousedown event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="mousemove" returns="jQuery">
+              <description>Bind a function to the mousemove event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the mousmove event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="mouseout" returns="jQuery">
+              <description>Bind a function to the mouseout event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the mouseout event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="mouseover" returns="jQuery">
+              <description>Bind a function to the mouseover event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the mouseover event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="mouseup" returns="jQuery">
+              <description>Bind a function to the mouseup event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the mouseup event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="resize" returns="jQuery">
+              <description>Bind a function to the resize event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the resize event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="scroll" returns="jQuery">
+              <description>Bind a function to the scroll event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the scroll event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="select" returns="jQuery">
+              <description>Trigger the select event of each matched element.</description>
+            </function>
+            <function name="select" returns="jQuery">
+              <description>Bind a function to the select event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the select event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="submit" returns="jQuery">
+              <description>Trigger the submit event of each matched element.</description>
+            </function>
+            <function name="submit" returns="jQuery">
+              <description>Bind a function to the submit event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>A function to bind to the submit event on each of the matched elements.
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="unload" returns="jQuery">
+              <description>Binds a function to the unload event of each matched element.</description>
+              <params>
+                <param name="fn" type="Function" optional="False">
+                  <description>function to bind to the unload event on each of the matched elements.
+
+function callback(eventObject) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="show" returns="jQuery">
+              <description>Displays each of the set of matched elements if they are hidden.</description>
+            </function>
+            <function name="show" returns="jQuery">
+              <description>Show all matched elements using a graceful animation and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="hide" returns="jQuery">
+              <description>Hides each of the set of matched elements if they are shown.</description>
+            </function>
+            <function name="hide" returns="jQuery">
+              <description>Hide all matched elements using a graceful animation and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="toggle" returns="jQuery">
+              <description>Toggles each of the set of matched elements.</description>
+            </function>
+            <function name="slideDown" returns="jQuery">
+              <description>Reveal all matched elements by adjusting their height and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="slideUp" returns="jQuery">
+              <description>Hide all matched elements by adjusting their height and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="slideToggle" returns="jQuery">
+              <description>Toggle the visibility of all matched elements by adjusting their height and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="fadeIn" returns="jQuery">
+              <description>Fade in all matched elements by adjusting their opacity and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="fadeOut" returns="jQuery">
+              <description>Fade out all matched elements by adjusting their opacity and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="fadeTo" returns="jQuery">
+              <description>Fade the opacity of all matched elements to a specified opacity and firing an optional callback after completion.</description>
+              <params>
+                <param name="speed" type="String" optional="False">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="opacity" type="Number" optional="False">
+                  <description>The opacity to fade to (a number from 0 to 1).</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executed once for each element animated against.
+
+function callback() {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="animate" returns="jQuery">
+              <description>A function for making your own, custom animations.</description>
+              <params>
+                <param name="params" type="Options" optional="False">
+                  <description>A set of style attributes that you wish to animate, and to what end.</description>
+                </param>
+                <param name="duration" type="String" optional="True">
+                  <description>A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</description>
+                </param>
+                <param name="easing" type="String" optional="True">
+                  <description>The name of the easing effect that you want to use (Plugin Required). There are two built-in values, "linear" and "swing".</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the animation completes, executes once for each element animated against.</description>
+                </param>
+              </params>
+            </function>
+            <function name="animate" returns="jQuery">
+              <description>A function for making your own, custom animations.</description>
+              <params>
+                <param name="params" type="Options" optional="False">
+                  <description>A set of style attributes that you wish to animate, and to what end.</description>
+                </param>
+                <param name="options" type="Options" optional="False">
+                  <description>A set of options with which to configure the animation.</description>
+                </param>
+              </params>
+            </function>
+            <function name="stop" returns="jQuery">
+              <description>Stops all the currently running animations on all the specified elements.</description>
+            </function>
+            <function name="queue" returns="Array">
+              <description>Returns a reference to the first element's queue (which is an array of functions).</description>
+            </function>
+            <function name="queue" returns="jQuery">
+              <description>Adds a new function, to be executed, onto the end of the queue of all matched elements.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to add to the queue.
+
+function callback() {
+  this; // dom element
+  // to continue the queue you must call
+  jQuery(this).dequeue();
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="queue" returns="jQuery">
+              <description>Replaces the queue of all matched element with this new queue (the array of functions).</description>
+              <params>
+                <param name="queue" type="Array" optional="False">
+                  <description>The queue to replace all the queues with.  The functions have the same parameters and this value as queue(callback).</description>
+                </param>
+              </params>
+            </function>
+            <function name="dequeue" returns="jQuery">
+              <description>Removes a queued function from the front of the queue and executes it.</description>
+            </function>
+            <function name="jQuery.ajax" returns="XMLHttpRequest">
+              <description>Load a remote page using an HTTP request.</description>
+              <params>
+                <param name="options" type="Options" optional="False">
+                  <description>A set of key/value pairs that configure the Ajax request. All options are optional. A default can be set for any option with $.ajaxSetup().</description>
+                </param>
+              </params>
+            </function>
+            <function name="load" returns="jQuery">
+              <description>Load HTML from a remote file and inject it into the DOM.</description>
+              <params>
+                <param name="url" type="String" optional="False">
+                  <description>The URL of the HTML page to load.</description>
+                </param>
+                <param name="data" type="Map" optional="False">
+                  <description>Key/value pairs that will be sent to the server.</description>
+                </param>
+                <param name="callback" type="Callback" optional="False">
+                  <description>The function called when the ajax request is complete (not necessarily success).
+
+function (responseText, textStatus, XMLHttpRequest) {
+  this; // dom element
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.get" returns="XMLHttpRequest">
+              <description>Load a remote page using an HTTP GET request.</description>
+              <params>
+                <param name="url" type="String" optional="False">
+                  <description>The URL of the page to load.</description>
+                </param>
+                <param name="data" type="Map" optional="True">
+                  <description>Key/value pairs that will be sent to the server.</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the data is loaded successfully.
+
+function (data, textStatus) {
+  // data could be xmlDoc, jsonObj, html, text, etc...
+  this; // the options for this ajax request
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.getJSON" returns="XMLHttpRequest">
+              <description>Load JSON data using an HTTP GET request.</description>
+              <params>
+                <param name="url" type="String" optional="False">
+                  <description>The URL of the page to load.</description>
+                </param>
+                <param name="data" type="Map" optional="True">
+                  <description>Key/value pairs that will be sent to the server.</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the data is loaded successfully.
+
+function (data, textStatus) {
+  // data will be a jsonObj
+  this; // the options for this ajax request
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.getScript" returns="XMLHttpRequest">
+              <description>Loads, and executes, a local JavaScript file using an HTTP GET request.</description>
+              <params>
+                <param name="url" type="String" optional="False">
+                  <description>The URL of the page to load.</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the data is loaded successfully.
+function (data, textStatus) {
+  // data should be javascript
+  this; // the options for this ajax request
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.post" returns="XMLHttpRequest">
+              <description>Load a remote page using an HTTP POST request.</description>
+              <params>
+                <param name="url" type="String" optional="False">
+                  <description>The URL of the page to load.</description>
+                </param>
+                <param name="data" type="Map" optional="True">
+                  <description>Key/value pairs that will be sent to the server.</description>
+                </param>
+                <param name="callback" type="Function" optional="True">
+                  <description>A function to be executed whenever the data is loaded successfully.
+
+function (data, textStatus) {
+  // data could be xmlDoc, jsonObj, html, text, etc...
+  this; // the options for this ajax request
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxComplete" returns="jQuery">
+              <description>Attach a function to be executed whenever an AJAX request completes. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+
+function (event, XMLHttpRequest, ajaxOptions) {
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxError" returns="jQuery">
+              <description>Attach a function to be executed whenever an AJAX request fails. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+
+function (event, XMLHttpRequest, ajaxOptions, thrownError) {
+  // thrownError only passed if an error was caught
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxSend" returns="jQuery">
+              <description>Attach a function to be executed before an AJAX request is sent. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+
+function (event, XMLHttpRequest, ajaxOptions) {
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxStart" returns="jQuery">
+              <description>Attach a function to be executed whenever an AJAX request begins and there is none already active. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+
+function () {
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxStop" returns="jQuery">
+              <description>Attach a function to be executed whenever all AJAX requests have ended. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+function () {
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="ajaxSuccess" returns="jQuery">
+              <description>Attach a function to be executed whenever an AJAX request completes successfully. This is an Ajax Event.</description>
+              <params>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to execute.
+
+function (event, XMLHttpRequest, ajaxOptions) {
+  this; // dom element listening
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.ajaxSetup" returns="">
+              <description>Setup global settings for AJAX requests.</description>
+              <params>
+                <param name="options" type="Options" optional="False">
+                  <description>A set of key/value pairs that configure the default Ajax request. All options are optional.</description>
+                </param>
+              </params>
+            </function>
+            <function name="serialize" returns="jQuery">
+              <description>Serializes a set of input elements into a string of data. This will serialize all given elements.</description>
+            </function>
+            <function name="serializeArray" returns="jQuery">
+              <description>Serializes all forms and form elements (like the .serialize() method) but returns a JSON data structure for you to work with.</description>
+            </function>
+            <function name="jQuery.each" returns="Object">
+              <description>A generic iterator function, which can be used to seamlessly iterate over both objects and arrays.</description>
+              <params>
+                <param name="object" type="Object" optional="False">
+                  <description>The object, or array, to iterate over.</description>
+                </param>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function that will be executed on every object.
+function callback(indexInArray, valueOfElement) {
+  var booleanKeepGoing;
+
+  this; // == valueOfElement
+
+  return booleanKeepGoing; // optional, unless false 
+                           // and want to stop looping
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.extend" returns="Object">
+              <description>Extend one object with one or more others, returning the original, modified, object.</description>
+              <params>
+                <param name="target" type="Object" optional="False">
+                  <description>The object to extend.</description>
+                </param>
+                <param name="object1" type="Object" optional="False">
+                  <description>The object that will be merged into the first.</description>
+                </param>
+                <param name="objectN" type="Object" optional="True">
+                  <description>More objects to merge into the first.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.grep" returns="Array">
+              <description>Filter items out of an array, by using a filter function.</description>
+              <params>
+                <param name="array" type="Array" optional="False">
+                  <description>The Array to find items in.</description>
+                </param>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to process each item against.  The first argument to the function is the list item, and the second argument is the list index.  The function should return a Boolean value.  Optionally, this argument may be a string rather than a function.  If the argument is a string, it is treated as a short "lambda-form" function, with "a" representing the list item and "i" representing the index.  For example, "a &amp;gt; 0" may be passed instead of "function(a){ return a &amp;gt; 0; }".
+
+function callback(elementOfArray, indexInArray) {
+  var shouldKeepIt;
+
+  this; // unmapped
+
+  return shouldKeepIt;
+}</description>
+                </param>
+                <param name="invert" type="Boolean" optional="True">
+                  <description>If "invert" is false, or not provided, then the function returns an array consisting of all elements for which "callback" returns true.  If "invert" is true, then the function returns an array consisting of all elements for which "callback" returns false.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.makeArray" returns="Array">
+              <description>Turns an array-like object into a true array.</description>
+              <params>
+                <param name="obj" type="Object" optional="False">
+                  <description>Array-like object to turn in to an actual Array.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.map" returns="Array">
+              <description>Translate all items in an array to another array of items.</description>
+              <params>
+                <param name="array" type="Array" optional="False">
+                  <description>The Array to translate.</description>
+                </param>
+                <param name="callback" type="Function" optional="False">
+                  <description>The function to process each item against.  The argument to the function is the list item. The function can return any value.  Optionally, this argument may be a string rather than a function. If the argument is a string, it is treated as a short "lambda-form" function, with "a" representing the list item. For example, "a * a" may be passed instead of "function(a){ return a * a; }". 
+
+function callback(elementOfArray, indexInArray) {
+  var replacementValue;
+
+  this; // unmapped
+
+  return replacementValue;
+}</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.inArray" returns="Number">
+              <description>Determine the index of the first parameter in the Array (-1 if not found).</description>
+              <params>
+                <param name="value" type="Any" optional="False">
+                  <description>Value to see if it exists in the array.</description>
+                </param>
+                <param name="array" type="Array" optional="False">
+                  <description>Array to look through for the value.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.unique" returns="Array">
+              <description>Remove all duplicate elements from an array of elements.</description>
+              <params>
+                <param name="array" type="Array" optional="False">
+                  <description>The Array to translate.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.isFunction" returns="boolean">
+              <description>Determine if the parameter passed is a function.</description>
+              <params>
+                <param name="obj" type="Object" optional="False">
+                  <description>Object to test whether or not it is a function.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.trim" returns="String">
+              <description>Remove the whitespace from the beginning and end of a string.</description>
+              <params>
+                <param name="str" type="String" optional="False">
+                  <description>The string to trim.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.data" returns="Number">
+              <description>Returns a unique ID for the element.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>DOM element of interest.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.data" returns="Any">
+              <description>Returns value at named data store for the element.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>DOM element of interest.</description>
+                </param>
+                <param name="name" type="String" optional="False">
+                  <description>Name of the data stored.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.data" returns="Any">
+              <description>Stores the value in the named spot and also returns the value.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>DOM element of interest.</description>
+                </param>
+                <param name="name" type="String" optional="False">
+                  <description>Name of the data to store.</description>
+                </param>
+                <param name="value" type="Any" optional="False">
+                  <description>Value to be stored.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.removeData" returns="">
+              <description>Remove the expando attribute that allows data storage on an element.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>Element to delete the data store from.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.removeData" returns="">
+              <description>Removes just this one named data store.</description>
+              <params>
+                <param name="elem" type="Element" optional="False">
+                  <description>Element to delete the named data store property from.</description>
+                </param>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the data store property to remove.</description>
+                </param>
+              </params>
+            </function>
+            <function name="jQuery.param" returns="String">
+              <description>Serializes an array of form elements or an object (core of .serialize() method).</description>
+              <params>
+                <param name="obj" type="Array" optional="False">
+                  <description>An Array or jQuery object is serialized by name/value pairs.  An object by key/value pairs.</description>
+                </param>
+              </params>
+            </function>
+            <function name="validate" returns="Plugins">
+              <description>Validates the selected form.</description>
+              <params>
+                <param name="options" type="Options" optional="True">
+                  <description>A set of key/value pairs that configure the validate. All options are optional.</description>
+                </param>
+              </params>
+            </function>
+            <function name="valid" returns="Boolean">
+              <description>Validates the selected form or elements.</description>
+            </function>
+            <function name="form" returns="Boolean">
+              <description>Validates the form, returns true if it is valid, false otherwise.</description>
+            </function>
+            <function name="element" returns="Boolean">
+              <description>Validates a single element, returns true if it is valid, false otherwise.</description>
+              <params>
+                <param name="element" type="Selector" optional="False">
+                  <description>An element to validate, must be inside the validated form.</description>
+                </param>
+              </params>
+            </function>
+            <function name="refresh" returns="undefined">
+              <description>Call to refresh a form after new elements have been added or rules changed.</description>
+              <params>
+                <param name="selection" type="Selector" optional="True">
+                  <description>Refresh only the given elements, instead of the entire form</description>
+                </param>
+              </params>
+            </function>
+            <function name="resetForm" returns="undefined">
+              <description>Resets the controlled form.</description>
+            </function>
+            <function name="showErrors" returns="undefined">
+              <description>Show the specified messages.</description>
+              <params>
+                <param name="errors" type="Object" optional="False">
+                  <description>One or more key/value pairs of input names and messages.</description>
+                </param>
+              </params>
+            </function>
+            <function name="setDefaults" returns="undefined">
+              <description>Modify default settings for validation.</description>
+              <params>
+                <param name="defaults" type="Options" optional="False">
+                  <description>Options to set as default.</description>
+                </param>
+              </params>
+            </function>
+            <function name="addMethod" returns="undefined">
+              <description>Add a new validation method. It must consist of a name (must be a legal javascript identifier), a function and a default message.</description>
+              <params>
+                <param name="name" type="String" optional="False">
+                  <description>The name of the method, used to identify and referencing it, must be a valid javascript identifier</description>
+                </param>
+                <param name="method" type="Callback" optional="False">
+                  <description>The actual method implementation, returning true if an element is valid</description>
+                </param>
+                <param name="message" type="String" optional="False">
+                  <description>The default message to display for this method. Can be a function created by String.format(value).</description>
+                </param>
+              </params>
+            </function>
+            <function name="required" returns="Boolean">
+              <description>Makes the element always required.</description>
+            </function>
+            <function name="required" returns="Boolean">
+              <description>Makes the element required, depending on the result of the given expression.</description>
+              <params>
+                <param name="dependency-expression" type="String" optional="False">
+                  <description>An expression (String) is evaluated in the context of the element's form, making the field required only if the expression returns more then one element.</description>
+                </param>
+              </params>
+            </function>
+            <function name="required" returns="Boolean">
+              <description>Makes the element required, depending on the result of the given callback.</description>
+              <params>
+                <param name="dependency-callback" type="Callback" optional="False">
+                  <description>The function is executed with the element as it's only argument: If it returns true, the element is required.</description>
+                </param>
+              </params>
+            </function>
+            <function name="minLength" returns="Boolean">
+              <description>Makes the element require a given minimum length.</description>
+              <params>
+                <param name="length" type="Integer" optional="False">
+                  <description>Minimum number of characters required</description>
+                </param>
+              </params>
+            </function>
+            <function name="maxLength" returns="Boolean">
+              <description>Makes the element require a given maxmimum length.</description>
+              <params>
+                <param name="length" type="Integer" optional="False">
+                  <description>Maximum number of characters required</description>
+                </param>
+              </params>
+            </function>
+            <function name="rangeLength" returns="Boolean">
+              <description>Makes the element require a given value range.</description>
+              <params>
+                <param name="range" type="Array" optional="False">
+                  <description>Value range required</description>
+                </param>
+              </params>
+            </function>
+            <function name="minValue" returns="Boolean">
+              <description>Makes the element require a given minimum value.</description>
+              <params>
+                <param name="value" type="Integer" optional="False">
+                  <description>Minimum value required</description>
+                </param>
+              </params>
+            </function>
+            <function name="maxValue" returns="Boolean">
+              <description>Makes the element require a given maximum value.</description>
+              <params>
+                <param name="value" type="Integer" optional="False">
+                  <description>Maximum value required</description>
+                </param>
+              </params>
+            </function>
+            <function name="rangeValue" returns="Boolean">
+              <description>Makes the element require a given value range.</description>
+              <params>
+                <param name="range" type="Array" optional="False">
+                  <description>Value range required</description>
+                </param>
+              </params>
+            </function>
+            <function name="email" returns="Boolean">
+              <description>Makes the element require a valid email</description>
+            </function>
+            <function name="url" returns="Boolean">
+              <description>Makes the element require a valid url</description>
+            </function>
+            <function name="date" returns="Boolean">
+              <description>Makes the element require a date.</description>
+            </function>
+            <function name="dateISO" returns="Boolean">
+              <description>Makes the element require a ISO date.</description>
+            </function>
+            <function name="dateDE" returns="Boolean">
+              <description>Makes the element require a german date.</description>
+            </function>
+            <function name="digits" returns="Boolean">
+              <description>Makes the element require digits only.</description>
+            </function>
+            <function name="creditcard" returns="Boolean">
+              <description>Makes the element require a creditcard number.</description>
+            </function>
+            <function name="accept" returns="Boolean">
+              <description>Makes the element require a certain file extension.</description>
+              <params>
+                <param name="extension" type="String" optional="True">
+                  <description>The allowed file extensions, seperated via "|", defaults to "png|jpe?g|gif"</description>
+                </param>
+              </params>
+            </function>
+            <function name="equalTo" returns="Boolean">
+              <description>Requires the element to be the same as another one</description>
+              <params>
+                <param name="other" type="Selector" optional="False">
+                  <description>The selector for the element to compare the current values</description>
+                </param>
+              </params>
+            </function>
+
+
+
+
+
+
+          </functions>
+          <attributes>
+            <attribute name="length" type="Number" readonly="False">
+              <description>The number of elements in the jQuery object.</description>
+            </attribute>
+            <attribute name="jQuery.browser" type="Map" readonly="False">
+              <description>Contains flags for the useragent, read from navigator.userAgent.</description>
+            </attribute>
+            <attribute name="jQuery.browser.version" type="String" readonly="False">
+              <description>The version number of the rendering engine for the user's browser.</description>
+            </attribute>
+            <attribute name="jQuery.boxModel" type="Boolean" readonly="False">
+              <description>States if the current page, in the user's browser, is being rendered using the [http://www.w3.org/TR/REC-CSS2/box.html W3C CSS Box Model].</description>
+            </attribute>
+          </attributes>
+        </interface>
+      </interfaces>
+      <global>
+        <functions>
+          <function name="$" returns="jQuery">
+            <params>
+              <param name="expression" type="String" optional="False" />
+              <param name="context" type="jQuery" optional="True" />
+            </params>
+          </function>
+          <function name="$" returns="jQuery">
+            <params>
+              <param name="html" type="String" optional="False" />
+              <param name="ownerDocument" type="document" optional="True" />
+            </params>
+          </function>
+          <function name="$" returns="jQuery">
+            <params>
+              <param name="callback" type="Function" optional="False" />
+            </params>
+          </function>
+          <function name="$" returns="jQuery">
+            <params>
+              <param name="elements" type="Element|Array" optional="False" />
+            </params>
+          </function>
+          <function name="jQuery" returns="jQuery">
+            <params>
+              <param name="expression" type="String" optional="False" />
+              <param name="context" type="jQuery" optional="True" />
+            </params>
+          </function>
+          <function name="jQuery" returns="jQuery">
+            <params>
+              <param name="html" type="String" optional="False" />
+              <param name="ownerDocument" type="document" optional="True" />
+            </params>
+          </function>
+          <function name="jQuery" returns="jQuery">
+            <params>
+              <param name="callback" type="Function" optional="False" />
+            </params>
+          </function>
+          <function name="jQuery" returns="jQuery">
+            <params>
+              <param name="elements" type="Element|Array" optional="False" />
+            </params>
+          </function>
+        </functions>
+      </global>
+    </module>
+  </modules>
+</javascript>

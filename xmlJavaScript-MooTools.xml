@@ -1,0 +1,1643 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright MPSOFTWARE -->
+<javascript>
+    <modules>
+        <module name="MooTools 1.4.5" disabled="False">
+            <interfaces>
+                <interface name="MooTools" extends="Object">
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+            <global>
+                <functions>
+                    <function name="$chk" returns="Boolean">
+                        <description>Checks to see if a value exists or is 0. Useful for allowing 0.</description>
+                        <params>
+                            <param name="mixed" type="Item" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$clear" returns="Null">
+                        <description>The identifier of the setInterval (periodical) or setTimeout (delay) to clear.</description>
+                        <params>
+                            <param name="timer" type="Number" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$defined" returns="Boolean">
+                        <description>Checks to see if a value is defined.</description>
+                        <params>
+                            <param name="obj" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$arguments" returns="functions">
+                        <description>Creates a function which returns the passed argument according to the index (i) passed.</description>
+                        <params>
+                            <param name="i" type="Number" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$empty" returns="Void">
+                        <description>An empty function, that's it. Typically used for as a placeholder inside event methods of classes.</description>
+                    </function>
+                    <function name="$lambda" returns="Function">
+                        <description>Creates an empty function which does nothing but return the value passed.</description>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$extend" returns="Object">
+                        <description>Copies all the properties from the second object passed in to the first object passed in.</description>
+                        <params>
+                            <param name="original" type="Object" optional="False"/>
+                            <param name="extension" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$merge" returns="Object">
+                        <description>Merges any number of objects recursively without referencing them or their sub-objects.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$each" returns="Void">
+                        <description>Used to iterate through iterables that are not regular arrays, such as built in getElementsByTagName calls, arguments of a function, or an object.</description>
+                        <params>
+                            <param name="iterable" type="Óbject" optional="False"/>
+                            <param name="fn" type="Function" optional="False"/>
+                            <param name="bind" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$pick" returns="Null">
+                        <description>Returns the first defined argument passed in, or null.</description>
+                        <params>
+                            <param name="mixed" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$random" returns="Number">
+                        <description>Returns a random integer between the two passed in values.</description>
+                        <params>
+                            <param name="min" type="Number" optional="False"/>
+                            <param name="max" type="Number" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$splat" returns="Array">
+                        <description>Converts the argument passed in to an array if it is defined and not already an array.</description>
+                        <params>
+                            <param name="obj" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$time" returns="Number">
+                        <description>Returns the current time as a timestamp.</description>
+                    </function>
+                    <function name="$try" returns="Mixed">
+                        <description>Tries to execute a number of functions. Returns immediately the return value of the first non-failed function without executing successive functions, or null.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$type" returns="String">
+                        <description>Returns the type of object that matches the element passed in.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="each" returns="Void">
+                        <description>Calls a function for each element in the array.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function which should be executed on each item in the array. This function is passed the item and its index in the array.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object(optional)" optional="False"/>
+                            <description>The object to be used as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="every" returns="Boolean">
+                        <description>Returns true if every element in the array satisfies the provided testing function. This method is provided only for browsers without native Array:every support.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test for each element.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object(optional)" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="filter" returns="Array">
+                        <description>Creates a new array with all of the elements of the array for which the provided filtering function returns true. This method is provided only for browsers without native Array:filter support.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test each element of the array. This function is passed the item and its index in the array.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object(optional)" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="clean" returns="Array">
+                        <description>Creates a new array with all of the elements of the array which are defined (i.e. not null or undefined).</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="indexOf" returns="Number">
+                        <description>Returns the index of the first element within the array equal to the specified value, or -1 if the value is not found. This method is provided only for browsers without native Array:indexOf support.</description>
+                        <params>
+                            <param name="item" type="Object" optional="False"/>
+                            <description>The item to search for in the array.</description>
+                        </params>
+                        <params>
+                            <param name="from" type="Number" optional="False"/>
+                            <description>The index of the array at which to begin the search.</description>
+                        </params>
+                    </function>
+                    <function name="map" returns="Array">
+                        <description>Creates a new array with the results of calling a provided function on every element in the array. This method is provided only for browsers without native Array:map support.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to produce an element of the new Array from an element of the current one.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object(optional)" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="some" returns="Boolean">
+                        <description>Returns true if at least one element in the array satisfies the provided testing function. This method is provided only for browsers without native Array:some support.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test for each element. This function is passed the item and its index in the array.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object(optional)" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="associate" returns="Object">
+                        <description>Creates an object with key-value pairs based on the array of keywords passed in and the current content of the array.</description>
+                        <params>
+                            <param name="obj" type="Array" optional="False"/>
+                            <description>Its items will be used as the keys of the object that will be created.</description>
+                        </params>
+                    </function>
+                    <function name="link" returns="Object">
+                        <description>Accepts an object of key / function pairs to assign values.</description>
+                        <params>
+                            <param name="object" type="Object" optional="False"/>
+                            <description>An object containing key / function pairs must be passed to be used as a template for associating values with the different keys.</description>
+                        </params>
+                    </function>
+                    <function name="contains" returns="Boolean">
+                        <description>Tests an array for the presence of an item.</description>
+                        <params>
+                            <param name="item" type="Object" optional="False"/>
+                            <description>The item to search for in the array.</description>
+                        </params>
+                        <params>
+                            <param name="from" type="Number" optional="False"/>
+                            <description>The index of the array at which to begin the search.</description>
+                        </params>
+                    </function>
+                    <function name="extend" returns="Array">
+                        <description>Extends an array with all the items of another.</description>
+                        <params>
+                            <param name="array" type="Array" optional="False"/>
+                            <description>The array whose items should be extended into this array.</description>
+                        </params>
+                    </function>
+                    <function name="getLast" returns="Mixed">
+                        <description>Returns the last item from the array.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getRandom" returns="Mixed">
+                        <description>Returns a random item from the array.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="include" returns="Array">
+                        <description>Pushes the passed element into the array if it's not already present (case and type sensitive).</description>
+                        <params>
+                            <param name="item" type="Object" optional="False"/>
+                            <description>The item that should be added to this array.</description>
+                        </params>
+                    </function>
+                    <function name="combine" returns="Array">
+                        <description>Combines an array with all the items of another. Does not allow duplicates and is case and type sensitive.</description>
+                        <params>
+                            <param name="array" type="Array" optional="False"/>
+                            <description>The array whose items should be combined into this array.</description>
+                        </params>
+                    </function>
+                    <function name="erase" returns="Array">
+                        <description>Removes all occurrences of an item from the array.</description>
+                        <params>
+                            <param name="item" type="Object" optional="False"/>
+                            <description>The item to search for in the array.</description>
+                        </params>
+                    </function>
+                    <function name="empty" returns="Array">
+                        <description>Empties an array.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="flatten" returns="Array">
+                        <description>Flattens a multidimensional array into a single array.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="hexToRgb" returns="String">
+                        <description>Converts an hexidecimal color value to RGB. Input array must be the following hexidecimal color format. ['FF','FF','FF'].</description>
+                        <params>
+                            <param name="array" type="Boolean" optional="False"/>
+                            <description>If true is passed, will output an array (eg. [255, 51, 0]) instead of a string (eg. "rgb(255,51,0)").</description>
+                        </params>
+                    </function>
+                    <function name="rgbToHex" returns="String">
+                        <description>Converts an RGB color value to hexidecimal. Input array must be in one of the following RGB color formats. [255,255,255], or [255,255,255,1].</description>
+                        <params>
+                            <param name="array" type="Boolean" optional="False"/>
+                            <description>If true is passed, will output an array (eg. ['ff','33','00']) instead of a string (eg. "#ff3300").</description>
+                        </params>
+                    </function>
+                    <function name="$A" returns="Array">
+                        <description>Creates a copy of an Array. Useful for applying the Array prototypes to iterable objects such as a DOM Node collection or the arguments object.</description>
+                        <params>
+                            <param name="iterable" type="Array" optional="False"/>
+                            <description>The iterable to copy.</description>
+                        </params>
+                    </function>
+                    <function name="create" returns="Function">
+                        <description>Base function for creating functional closures which is used by all other Function prototypes.</description>
+                        <params>
+                            <param name="options" type="Object" optional="False"/>
+                            <description>The options from which the function will be created. If options is not provided, then creates a copy of the function.</description>
+                        </params>
+                    </function>
+                    <function name="pass" returns="Function">
+                        <description>Returns a closure with arguments and bind.</description>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                    </function>
+                    <function name="attempt" returns="Mixed">
+                        <description>Tries to execute the function.</description>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                    </function>
+                    <function name="bind" returns="Function">
+                        <description>Changes the scope of this within the target function to refer to the bind parameter.</description>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                    </function>
+                    <function name="bindWithEvent" returns="Function">
+                        <description>Changes the scope of this within the target function to refer to the bind parameter. It also makes "space" for an event. This allows the function to be used in conjunction with Element:addEvent and arguments.</description>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                    </function>
+                    <function name="delay" returns="Number">
+                        <description>Delays the execution of a function by a specified duration.</description>
+                        <params>
+                            <param name="delay" type="Number" optional="False"/>
+                            <description>The duration to wait (in milliseconds).</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                    </function>
+                    <function name="periodical" returns="Number">
+                        <description>Executes a function in the specified intervals of time. Periodic execution can be stopped using the $clear function.</description>
+                        <params>
+                            <param name="period" type="Number" optional="False"/>
+                            <description>The duration of the intervals between executions.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                    </function>
+                    <function name="run" returns="Mixed">
+                        <description>Runs the Function with specified arguments and binding. The same as apply but reversed and with support for a single argument.</description>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The arguments to pass to the function (must be an array if passing more than one argument).</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object that the "this" of the function will refer to.</description>
+                        </params>
+                    </function>
+                    <function name="limit" returns="Number">
+                        <description>Limits this number between two bounds.</description>
+                        <params>
+                            <param name="min" type="Number" optional="False"/>
+                            <description>The minimum possible value.</description>
+                        </params>
+                        <params>
+                            <param name="max" type="Number" optional="False"/>
+                            <description>The maximum possible value.</description>
+                        </params>
+                    </function>
+                    <function name="round" returns="Number">
+                        <description>Returns this number rounded to the specified precision.</description>
+                        <params>
+                            <param name="precision" type="Number" optional="False"/>
+                            <description>The number of digits after the decimal place. optional: defaults to 0.</description>
+                        </params>
+                    </function>
+                    <function name="times" returns="void">
+                        <description>Executes the function passed in the specified number of times.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function which should be executed on each iteration of the loop. This function is passed the current iteration's index.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="toFloat" returns="Number">
+                        <description>Returns this number as another number with the passed in base. Useful because toInt must work on both Strings and Numbers.</description>
+                        <params>
+                            <param name="base" type="Number" optional="False"/>
+                            <description>The base to use.</description>
+                        </params>
+                    </function>
+                    <function name="toInt" returns="Number">
+                        <description>Returns this number as another number with the passed in base. Useful because toInt must work on both Strings and Numbers.</description>
+                        <params>
+                            <param name="base" type="Number" optional="False"/>
+                            <description>The base to use.</description>
+                        </params>
+                    </function>
+                    <function name="test" returns="Boolean">
+                        <description>Searches for a match between the string and a regular expression. For more information see MDC Regexp:test.</description>
+                        <params>
+                            <param name="regex" type="Mixed" optional="False"/>
+                            <description>The string or regular expression you want to match the string with.</description>
+                        </params>
+                        <params>
+                            <param name="params" type="DOMString" optional="False"/>
+                            <description>If first parameter is a string, any parameters you want to pass to the regular expression ('g' has no effect).</description>
+                        </params>
+                    </function>
+                    <function name="contains" returns="Boolean">
+                        <description>Checks to see if the string passed in is contained in this string. If the separator parameter is passed, will check to see if the string is contained in the list of values separated by that parameter.</description>
+                        <params>
+                            <param name="string" type="DOMString" optional="False"/>
+                            <description>The string to search for.</description>
+                        </params>
+                        <params>
+                            <param name="separator" type="DOMString" optional="False"/>
+                            <description>The string that separates the values in this string (eg. Element classNames are separated by a ' ').</description>
+                        </params>
+                    </function>
+                    <function name="trim" returns="String">
+                        <description>Trims the leading and trailing spaces off a string.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="clean" returns="String">
+                        <description>Removes all extraneous whitespace from a string and trims it (String:trim).</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="camelCase" returns="String">
+                        <description>Converts a hyphenated string to a camelcased string.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="hyphenate" returns="String">
+                        <description>Converts a camelcased string to a hyphenated string.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="capitalize" returns="String">
+                        <description>Converts the first letter of each word in a string to uppercase.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="escapeRegExp" returns="String">
+                        <description>Converts the first letter of each word in a string to uppercase.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="toInt" returns="Number">
+                        <description>Parses this string and returns a number of the specified radix or base.</description>
+                        <params>
+                            <param name="base" type="Number" optional="False"/>
+                            <description>The base to use (defaults to 10).</description>
+                        </params>
+                    </function>
+                    <function name="toFloat" returns="Number">
+                        <description>Parses this string and returns a floating point number.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="hexToRgb" returns="String">
+                        <description>Converts a hexidecimal color value to RGB. Input string must be in one of the following hexidecimal color formats (with or without the hash). '#ffffff', #fff', 'ffffff', or 'fff'.</description>
+                        <params>
+                            <param name="Array" type="Boolean" optional="False"/>
+                            <description>If true is passed, will output an array (eg. [255, 51, 0]) instead of a string (eg. "rgb(255,51,0)").</description>
+                        </params>
+                    </function>
+                    <function name="rgbToHex" returns="String">
+                        <description>Converts an RGB color value to hexidecimal. Input array must be in one of the following RGB color formats. [255,255,255], or [255,255,255,1]</description>
+                        <params>
+                            <param name="Array" type="Boolean" optional="False"/>
+                            <description>Converts an RGB color value to hexidecimal. Input string must be in one of the following RGB color formats. "rgb(255,255,255)", or "rgba(255,255,255,1)".</description>
+                        </params>
+                    </function>
+                    <function name="stripScripts" returns="String">
+                        <description>Strips the String of its script tags and anything in between them.</description>
+                        <params>
+                            <param name="evaluate" type="Boolean" optional="False"/>
+                            <description>If true is passed, the scripts within the String will be evaluated.</description>
+                        </params>
+                    </function>
+                    <function name="substitute" returns="String">
+                        <description>Substitutes keywords in a string using an object/array. Removes undefined keywords and ignores escaped keywords.</description>
+                        <params>
+                            <param name="object" type="Mixed" optional="False"/>
+                            <description>The key/value pairs used to substitute a string.</description>
+                        </params>
+                        <params>
+                            <param name="regexp" type="Regexp" optional="False"/>
+                            <description>The regexp pattern to be used in the string keywords, with global flag. Defaults to /\?{([^}]+)}/g .</description>
+                        </params>
+                    </function>
+                    <function name="each" returns="Hash">
+                        <description>Calls a function for each key-value pair in the object.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function which should be executed on each item in the Hash. This function is passed the item and its key in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="has" returns="Boolean">
+                        <description>Tests for the presence of a specified key in the Hash.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key to search for in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="keyOf" returns="String or Boolean">
+                        <description>Returns the key of the specified value. Synonymous with Array:indexOf.</description>
+                        <params>
+                            <param name="item" type="Mixed" optional="False"/>
+                            <description>The item to search for in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="hasValue" returns="Boolean">
+                        <description>Tests for the presence of a specified value in the Hash.</description>
+                        <params>
+                            <param name="value" type="Array" optional="False"/>
+                            <description>The value to search for in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="extend" returns="Hash">
+                        <description>Extends this Hash with the key-value pairs from the object passed in.</description>
+                        <params>
+                            <param name="properties" type="Object" optional="False"/>
+                            <description>The object whose items should be extended into this Hash</description>
+                        </params>
+                    </function>
+                    <function name="combine" returns="Hash">
+                        <description>Combines this Hash with the key-value pairs of the object passed in. Does not allow duplicates (old values are not overwritten by new ones) and is case and type sensitive.</description>
+                        <params>
+                            <param name="properties" type="Object" optional="False"/>
+                            <description>The object whose items should be combined into this Hash.</description>
+                        </params>
+                    </function>
+                    <function name="erase" returns="Hash">
+                        <description>Removes the specified key from the Hash.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key to search for in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="get" returns="Mixed or Null">
+                        <description>Retrieves a value from the hash.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key to search for in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="set" returns="Hash">
+                        <description>Adds a key-value pair to the hash or replaces a previous value associated with the specified key.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key to insert or modify in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to associate with the specified key in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="empty" returns="void">
+                        <description>Empties the hash.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="include" returns="Hash">
+                        <description>Includes the specified key-value pair in the Hash if the key doesn't already exist.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key to insert or modify in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to associate with the specified key in the Hash.</description>
+                        </params>
+                    </function>
+                    <function name="map" returns="Hash">
+                        <description>Creates a new map with the results of calling a provided function on every value in the map.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to produce an element of the new Hash from an element of the current one.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="filter" returns="Hash">
+                        <description>Creates a new Hash with all of the elements of the Hash for which the provided filtering function returns true.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test each element of the Hash. This function is passed the value and its key in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="every" returns="Boolean">
+                        <description>Returns true if every value in the object satisfies the provided testing function.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test each element of the Hash. This function is passed the value and its key in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="some" returns="Boolean">
+                        <description>Returns true if at least one value in the object satisfies the provided testing function.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to test each element of the Hash. This function is passed the value and its key in the Hash.</description>
+                        </params>
+                        <params>
+                            <param name="bind" type="Object" optional="False"/>
+                            <description>The object to use as 'this' in the function. For more information see Function:bind.</description>
+                        </params>
+                    </function>
+                    <function name="getClean" returns="Object">
+                        <description>Returns a a clean object from an Hash.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getKeys" returns="MooTools - Hash">
+                        <description>Returns an array containing all the keys, in the same order as the values returned by Hash:getValues.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getValues" returns="Array">
+                        <description>Returns an array containing all the values, in the same order as the keys returned by Hash:getKeys.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getLength" returns="Number">
+                        <description>Returns the number of keys in the Hash.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="toQueryString" returns="String">
+                        <description>Generates a query string from key/value pairs in an object and URI encodes the values.</description>
+                        <params>
+                            <param name="source" type="Object" optional="False"/>
+                            <description>The object to generate the query string from.</description>
+                        </params>
+                    </function>
+                    <function name="stop" returns="Object">
+                        <description>Stop an Event from propagating and also executes preventDefault.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="stopPropagation" returns="Object">
+                        <description>Cross browser method to stop the propagation of an event (this stops the event from bubbling up through the DOM).</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="preventDefault" returns="Object">
+                        <description>Cross browser method to prevent the default action of the event.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="implement" returns="void">
+                        <description>Implements the passed in properties into the base Class prototypes, altering the base Class. The same as creating a new Class with the Implements property, but handy when you need to modify existing classes.</description>
+                        <params>
+                            <param name="properties" type="Object" optional="False"/>
+                            <description>The properties to add to the base Class.</description>
+                        </params>
+                    </function>
+                    <function name="chain" returns="Object">
+                        <description>Adds functions to the end of the call stack of the Chain instance.</description>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function (or array of functions) to add to the chain call stack. Will accept and number of functions or arrays of functions.</description>
+                        </params>
+                    </function>
+                    <function name="callChain" returns="Mixed">
+                        <description>Removes the first function of the Chain instance stack and executes it. The next function will then become first in the array.</description>
+                        <params>
+                            <param name="any" type="Any" optional="False"/>
+                            <description>Any arguments passed in will be passed to the "next" function.</description>
+                        </params>
+                    </function>
+                    <function name="clearChain" returns="Object">
+                        <description>Clears the stack of a Chain instance.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="addEvent" returns="Object">
+                        <description>Adds an event to the Class instance's event stack.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The type of event (e.g. 'complete').</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to execute.</description>
+                        </params>
+                        <params>
+                            <param name="internal" type="Boolean" optional="False"/>
+                            <description>Sets the function property: internal to true. Internal property is used to prevent removal.</description>
+                        </params>
+                    </function>
+                    <function name="addEvents" returns="Object">
+                        <description>The same as addEvent, but accepts an object to add multiple events at once.</description>
+                        <params>
+                            <param name="event" type="Object" optional="False"/>
+                            <description>An object with key/value representing: key the event name (e.g. 'start'), and value the function that is called when the Event occurs.</description>
+                        </params>
+                    </function>
+                    <function name="fireEvent" returns="Object">
+                        <description>Fires all events of the specified type in the Class instance.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The type of event (e.g. 'complete').</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The argument(s) to pass to the function. To pass more than one argument, the arguments must be in an array.</description>
+                        </params>
+                        <params>
+                            <param name="delay" type="Number" optional="True"/>
+                            <description>Delay in miliseconds to wait before executing the event (defaults to 0).</description>
+                        </params>
+                    </function>
+                    <function name="removeEvent" returns="Object">
+                        <description>Removes an event from the stack of events of the Class instance.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The type of event (e.g. 'complete').</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to remove.</description>
+                        </params>
+                    </function>
+                    <function name="removeEvents" returns="Object">
+                        <description>Removes all events of the given type from the stack of events of a Class instance. If no type is specified, removes all events of all types.</description>
+                        <params>
+                            <param name="event" type="Array" optional="True"/>
+                            <description>If not passed removes all events of all types. </description>
+                        </params>
+                    </function>
+                    <function name="setOptions" returns="Object">
+                        <description>Merges the default options of the Class with the options passed in.</description>
+                        <params>
+                            <param name="options" type="Object" optional="False"/>
+                            <description>The user defined options to merge with the defaults.</description>
+                        </params>
+                    </function>
+                    <function name="$" returns="MooTools - Element">
+                        <description>The dollar function has a dual purpose: Getting the element by its id, and making an element in Internet Explorer "grab" all the Element methods.</description>
+                        <params>
+                            <param name="el" type="Element" optional="False"/>
+                            <description>The Element to be extended. Can be one of the following types: * (element) The element will be extended if it is not already. * (string) A string containing the id of the DOM element desired. * (object) If the object has a toElement method, toElement will be called to get the Element.</description>
+                        </params>
+                    </function>
+                    <function name="$$" returns="Array">
+                        <description>Selects and extends DOM elements. Elements arrays returned with $$ will also accept all the Element methods.</description>
+                        <params>
+                            <param name="el" type="Element" optional="False"/>
+                            <description>Any number of the following as arguments are accepted, HTMLCollections, arrays of elements, elements, or strings as selectors.</description>
+                        </params>
+                    </function>
+                    <function name="getElement" returns="Element">
+                        <description>Gets the first descendant element whose tag name matches the tag provided. If Selectors is included, CSS selectors may also be passed.</description>
+                        <params>
+                            <param name="tag" type="DOMString" optional="False"/>
+                            <description>Tag name of the element to find.</description>
+                        </params>
+                    </function>
+                    <function name="getElements" returns="Array">
+                        <description>Collects all decedent elements whose tag name matches the tag provided. If Selectors is included, CSS selectors may also be passed.</description>
+                        <params>
+                            <param name="tag" type="DOMString" optional="False"/>
+                            <description>String of the tag to match.</description>
+                        </params>
+                    </function>
+                    <function name="getElementById" returns="Mixed">
+                        <description>Gets the element with the specified id found inside the current Element.</description>
+                        <params>
+                            <param name="id" type="DOMString" optional="False"/>
+                            <description>The ID of the Element to find.</description>
+                        </params>
+                    </function>
+                    <function name="set" returns="Element">
+                        <description>This is a "dynamic arguments" method. Properties passed in can be any of the 'set' properties in the Element.Properties Hash.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The string key from the Element.Properties Hash representing the property to set.</description>
+                        </params>
+                    </function>
+                    <function name="get" returns="Mixed">
+                        <description>This is a "dynamic arguments" method. Properties passed in can be any of the 'get' properties in the Element.Properties Hash.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The string key from the Element.Properties Hash representing the property to get.</description>
+                        </params>
+                    </function>
+                    <function name="erase" returns="Mixed">
+                        <description>This is a "dynamic arguments" method. Properties passed in can be any of the 'erase' properties in the Element.Properties Hash.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The string key from the Element.Properties Hash representing the property to erase.</description>
+                        </params>
+                    </function>
+                    <function name="match" returns="Boolean">
+                        <description>Tests this Element to see if it matches the argument passed in.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="False"/>
+                            <description>The tag name to test against this element. If Selectors is included, any single CSS selectors may also be passed.</description>
+                        </params>
+                    </function>
+                    <function name="inject" returns="Element">
+                        <description>Injects, or inserts, the Element at a particular place relative to the Element's children (specified by the second the argument).</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>el can be the id of an element or an element.</description>
+                        </params>
+                        <params>
+                            <param name="where" type="DOMString" optional="True"/>
+                            <description>The place to inject this Element. Can be 'top', 'bottom', 'after', or 'before'.</description>
+                        </params>
+                    </function>
+                    <function name="grab" returns="Element">
+                        <description>Works as Element:inject, but in reverse. Appends the Element at a particular place relative to the Element's children (specified by the where parameter).</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>el can be the id of an element or an element.</description>
+                        </params>
+                        <params>
+                            <param name="where" type="DOMString" optional="True"/>
+                            <description>The place to inject this Element. Can be 'top', 'bottom', 'after', or 'before'.</description>
+                        </params>
+                    </function>
+                    <function name="adopt" returns="Element">
+                        <description>Works like Element:grab, but allows multiple elements to be adopted. Inserts the passed element(s) inside the Element (which will then become the parent element).</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>The id of an element, an Element, or an array of elements.</description>
+                        </params>
+                        <params>
+                            <param name="others" type="Mixed" optional="True"/>
+                            <description>One or more additional Elements separated by a comma or as an array.</description>
+                        </params>
+                    </function>
+                    <function name="wraps" returns="MElement">
+                        <description>Works like Element:grab, but instead of moving the grabbed element from its place, this method moves this Element around its target. The Element is moved to the position of the passed element and becomes the parent.</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>The id of an element, an Element, or an array of elements.</description>
+                        </params>
+                        <params>
+                            <param name="where" type="DOMString" optional="True"/>
+                            <description>The place to insert the passed in element. Can be 'top' or 'bottom'.</description>
+                        </params>
+                    </function>
+                    <function name="appendText" returns="Element">
+                        <description>Works like Element:grab, but instead of accepting an id or an element, it only accepts text. A text node will be created inside this Element, in either the top or bottom position.</description>
+                        <params>
+                            <param name="text" type="DOMString" optional="False"/>
+                            <description>The text to append.</description>
+                        </params>
+                        <params>
+                            <param name="where" type="DOMString" optional="True"/>
+                            <description>The position to inject the text to.</description>
+                        </params>
+                    </function>
+                    <function name="dispose" returns="Element">
+                        <description>Removes the Element from the DOM.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="clone" returns="Element">
+                        <description>Clones the Element and returns the cloned one.</description>
+                        <params>
+                            <param name="contents" type="Boolean" optional="True"/>
+                            <description>When set to false the Element's contents are not cloned.</description>
+                        </params>
+                        <params>
+                            <param name="keepit" type="Boolean" optional="False"/>
+                            <description>When true the cloned Element keeps the id attribute, if present. Same goes for any of the cloned childNodes.</description>
+                        </params>
+                    </function>
+                    <function name="replaces" returns="Element">
+                        <description>A string id representing the Element to be replaced with, or an Element reference.</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>A string id representing the Element to be replaced with, or an Element reference.</description>
+                        </params>
+                    </function>
+                    <function name="hasClass" returns="Boolean">
+                        <description>Tests the Element to see if it has the passed in className.</description>
+                        <params>
+                            <param name="className" type="DOMString" optional="False"/>
+                            <description>The class name to test.</description>
+                        </params>
+                    </function>
+                    <function name="addClass" returns="Element">
+                        <description>Adds the passed in class to the Element, if the Element doesnt already have it.</description>
+                        <params>
+                            <param name="className" type="DOMString" optional="False"/>
+                            <description>The class name to add.</description>
+                        </params>
+                    </function>
+                    <function name="removeClass" returns="Element">
+                        <description>Works like Element:addClass, but removes the class from the Element.</description>
+                        <params>
+                            <param name="className" type="DOMString" optional="False"/>
+                            <description>The class name to remove.</description>
+                        </params>
+                    </function>
+                    <function name="toggleClass" returns="Element">
+                        <description>Adds or removes the passed in class name to the Element, depending on whether or not it's already present.</description>
+                        <params>
+                            <param name="className" type="DOMString" optional="False"/>
+                            <description>The class to add or remove.</description>
+                        </params>
+                    </function>
+                    <function name="getPrevious" returns="Mixed">
+                        <description>Returns the previousSibling of the Element (excluding text nodes).</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the the found element(s) with. If Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getAllPrevious" returns="Mixed">
+                        <description>Like Element:getPrevious, but returns a collection of all the matched previousSiblings.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the the found element(s) with. If Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getNext" returns="Mixed">
+                        <description>As Element:getPrevious, but tries to find the nextSibling (excluding text nodes).</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A comma seperated list of tag names to match the found element(s) with. If Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getAllNext" returns="Mixed">
+                        <description>Like Element.getNext, but returns a collection of all the matched nextSiblings.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A comma seperated list of tag names to match the found element(s) with. If Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getFirst" returns="Mixed">
+                        <description>Works as Element:getPrevious, but tries to find the firstChild (excluding text nodes).</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the found element(s) with. if Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getLast" returns="Mixed">
+                        <description>Works as Element:getPrevious, but tries to find the lastChild.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the found element(s) with. if Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getParent" returns="Mixed">
+                        <description>Works as Element:getPrevious, but tries to find the parentNode.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the found element(s) with. if Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getParents" returns="Mixed">
+                        <description>Like Element:getParent, but returns a collection of all the matched parentNodes up the tree.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the found element(s) with. if Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="getChildren" returns="Array">
+                        <description>Returns all the Element's children (excluding text nodes). Returns as Elements.</description>
+                        <params>
+                            <param name="match" type="DOMString" optional="True"/>
+                            <description>A tag name to match the found element(s) with. if Selectors is included, a full CSS selector can be passed.</description>
+                        </params>
+                    </function>
+                    <function name="hasChild" returns="Boolean">
+                        <description>Checks all descendants of this Element for a match.</description>
+                        <params>
+                            <param name="el" type="Mixed" optional="False"/>
+                            <description>Can be an Element reference or string id.</description>
+                        </params>
+                    </function>
+                    <function name="empty" returns="Element">
+                        <description>Empties an Element of all its children.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="destroy" returns="Null">
+                        <description>Empties an Element of all its children, removes and garbages the Element. Useful to clear memory before the pageUnload.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="toQueryString" returns="String">
+                        <description>Reads the child inputs of the Element and generates a query string based on their values.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getSelected" returns="Array">
+                        <description>Returns the selected options of a select element.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getProperty" returns="String">
+                        <description>Returns a single element attribute.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The property to be retrieved.</description>
+                        </params>
+                    </function>
+                    <function name="getProperties" returns="String">
+                        <description>Gets multiple element attributes.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>Any number of properties to be retrieved.</description>
+                        </params>
+                    </function>
+                    <function name="setProperty" returns="Element">
+                        <description>Sets an attribute or special property for this Element.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The property to assign the value passed in.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to assign to the property passed in.</description>
+                        </params>
+                    </function>
+                    <function name="setProperties" returns="Element">
+                        <description>Sets numerous attributes for the Element.</description>
+                        <params>
+                            <param name="properties" type="Object" optional="False"/>
+                            <description>An object with key/value pairs.</description>
+                        </params>
+                    </function>
+                    <function name="removeProperty" returns="Element">
+                        <description>Removes an attribute from the Element.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The attribute to remove.</description>
+                        </params>
+                    </function>
+                    <function name="removeProperties" returns="Element">
+                        <description>Removes numerous attributes from the Element.</description>
+                        <params>
+                            <param name="properties" type="DOMString" optional="False"/>
+                            <description>The attributes to remove, separated by comma.</description>
+                        </params>
+                    </function>
+                    <function name="store" returns="Element">
+                        <description>Stores an item in the Elements Storage, linked to this Element.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key you want to assign to the stored value.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>Any value you want to store.</description>
+                        </params>
+                    </function>
+                    <function name="retrieve" returns="Mixed">
+                        <description>Retrieves a value from the Elements storage.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key you want to retrieve from the storage.</description>
+                        </params>
+                        <params>
+                            <param name="default" type="Mixed" optional="True"/>
+                            <description>Default value to store and return if no value is stored.</description>
+                        </params>
+                    </function>
+                    <function name="eliminate" returns="Mixed">
+                        <description>Eliminates a key from the Elements storage.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key you want to eliminate from the storage.</description>
+                        </params>
+                    </function>
+                    <function name="filter" returns="Array">
+                        <description>Filters a collection of elements by a given tag name. If Selectors is included, this method will be able to filter by any selector. It also works like Array:filter, by filtering collection of elements with a function.</description>
+                        <params>
+                            <param name="selector" type="Mixed" optional="False"/>
+                            <description>A single CSS selector.</description>
+                        </params>
+                    </function>
+                    <function name="addEvent" returns="Element">
+                        <description>Attaches an event listener to a DOM element.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The event name to monitor ('click', 'load', etc) without the prefix 'on'.</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to execute.</description>
+                        </params>
+                    </function>
+                    <function name="removeEvent" returns="Element">
+                        <description>Works as Element.addEvent, but instead removes the specified event listener.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The event name to monitor ('click', 'load', etc) without the prefix 'on'.</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to execute.</description>
+                        </params>
+                    </function>
+                    <function name="addEvents" returns="Element">
+                        <description>The same as Element:addEvent, but accepts an object to add multiple events at once.</description>
+                        <params>
+                            <param name="event" type="Object" optional="False"/>
+                            <description>An object with key/value representing: key the event name (e.g. 'start'), and value the function that is called when the Event occurs.</description>
+                        </params>
+                    </function>
+                    <function name="fireEvent" returns="Element">
+                        <description>Fires all events of the specified type in the Class instance.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The type of event (e.g. 'complete').</description>
+                        </params>
+                        <params>
+                            <param name="args" type="Mixed" optional="False"/>
+                            <description>The argument(s) to pass to the function. To pass more than one argument, the arguments must be in an array.</description>
+                        </params>
+                        <params>
+                            <param name="delay" type="Number" optional="True"/>
+                            <description>Delay in miliseconds to wait before executing the event (defaults to 0).</description>
+                        </params>
+                    </function>
+                    <function name="removeEvent" returns="Element">
+                        <description>Removes an event from the stack of events of the Class instance.</description>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>The type of event (e.g. 'complete').</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="Function" optional="False"/>
+                            <description>The function to remove.</description>
+                        </params>
+                    </function>
+                    <function name="removeEvents" returns="Element">
+                        <description>Removes all events of the given type from the stack of events of a Class instance. If no type is specified, removes all events of all types.</description>
+                        <params>
+                            <param name="event" type="Array" optional="True"/>
+                            <description>If not passed removes all events of all types. </description>
+                        </params>
+                    </function>
+                    <function name="cloneEvents" returns="Element">
+                        <description>Clones all events from an Element to this Element.</description>
+                        <params>
+                            <param name="from" type="Element" optional="False"/>
+                            <description>Copy all events from this Element.</description>
+                        </params>
+                        <params>
+                            <param name="type" type="DOMString" optional="False"/>
+                            <description>Copies only events of this type. If null, copies all events.</description>
+                        </params>
+                    </function>
+                    <function name="setStyle" returns="Element">
+                        <description>Sets a CSS property to the Element.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The property to set.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to which to set it. Numeric values of properties requiring a unit will automatically be appended with 'px'.</description>
+                        </params>
+                    </function>
+                    <function name="getStyle" returns="String">
+                        <description>Returns the style of the Element given the property passed in.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The css style property you want to retrieve.</description>
+                        </params>
+                    </function>
+                    <function name="setStyles" returns="Element">
+                        <description>Applies a collection of styles to the Element.</description>
+                        <params>
+                            <param name="styles" type="Object" optional="False"/>
+                            <description>An object of property/value pairs for all the styles to apply.</description>
+                        </params>
+                    </function>
+                    <function name="getStyles" returns="Object">
+                        <description>Returns an object of styles of the Element for each argument passed in.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>Any number of style properties.</description>
+                        </params>
+                    </function>
+                    <function name="scrollTo" returns="void">
+                        <description>Scrolls the element to the specified coordinated (if the element has an overflow). The following method is also available on the Window object.</description>
+                        <params>
+                            <param name="x" type="Number" optional="False"/>
+                            <description>The x coordinate.</description>
+                        </params>
+                        <params>
+                            <param name="y" type="Number" optional="False"/>
+                            <description>The y coordinate.</description>
+                        </params>
+                    </function>
+                    <function name="getSize" returns="Object">
+                        <description>Returns the height and width of the Element, taking into account borders and padding. The following method is also available on the Window object.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getScrollSize" returns="Object">
+                        <description>Returns an Object representing the size of the target Element, including scrollable area. The following method is also available on the Window object.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getScroll" returns="Object">
+                        <description>Returns an Object representing how far the target Element is scrolled in either direction. The following method is also available on the Window object.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getPosition" returns="Object">
+                        <description>Returns the real offsets of the element.</description>
+                        <params>
+                            <param name="relative" type="Element" optional="False"/>
+                            <description>If set, the position will be relative to this Element.</description>
+                        </params>
+                    </function>
+                    <function name="setPosition" returns="Element">
+                        <description>Sets the position of the element's left and top values to the x/y positions you specify.</description>
+                        <params>
+                            <param name="positions" type="Object" optional="False"/>
+                            <description>an object with x/y values (integers or strings, i.e. 10 or "10px")</description>
+                        </params>
+                    </function>
+                    <function name="getCoordinates" returns="Object">
+                        <description>Returns an object with width, height, left, right, top, and bottom coordinate values of the Element.</description>
+                        <params>
+                            <param name="relative" type="element" optional="True"/>
+                            <description>If set, the position will be relative to this element, otherwise relative to the document.</description>
+                        </params>
+                    </function>
+                    <function name="getOffsetParent" returns="Mixed">
+                        <description>Returns the parent of the element that is positioned, if there is one.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="getElements" returns="Array">
+                        <description>Gets all the elements within an element that match the given selector.</description>
+                        <params>
+                            <param name="selector" type="DOMString" optional="False"/>
+                            <description>The CSS Selector to match.</description>
+                        </params>
+                    </function>
+                    <function name="getElement" returns="Mixed">
+                        <description>Same as Element:getElements, but returns only the first.</description>
+                        <params>
+                            <param name="selector" type="DOMString" optional="False"/>
+                            <description>The CSS Selector to match.</description>
+                        </params>
+                    </function>
+                    <function name="encode" returns="String">
+                        <description>Converts an object or array to a JSON string.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                            <description>The object to convert to string.</description>
+                        </params>
+                    </function>
+                    <function name="decode" returns="Object">
+                        <description>Converts a JSON string into an JavaScript object.</description>
+                        <params>
+                            <param name="string" type="DOMString" optional="False"/>
+                            <description>The string to evaluate.</description>
+                        </params>
+                        <params>
+                            <param name="secure" type="Boolean" optional="False"/>
+                            <description>If set to true, checks for any hazardous syntax and returns null if any found.</description>
+                        </params>
+                    </function>
+                    <function name="write" returns="Object">
+                        <description>Writes a cookie in the browser.</description>
+                        <params>
+                            <param name="key" type="DOMString" optional="False"/>
+                            <description>The key (or name) of the cookie.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="DOMString" optional="False"/>
+                            <description>The value to set. Cannot contain semicolons.</description>
+                        </params>
+                        <params>
+                            <param name="options" type="Mixed" optional="True"/>
+                            <description>
+                            </description>
+                        </params>
+                    </function>
+                    <function name="read" returns="Mixed">
+                        <description>Reads the value of a Cookie.</description>
+                        <params>
+                            <param name="name" type="DOMString" optional="False"/>
+                            <description>The name of the Cookie to retrieve.</description>
+                        </params>
+                    </function>
+                    <function name="dispose" returns="void">
+                        <description>Removes a cookie from the browser.</description>
+                        <params>
+                            <param name="name" type="DOMString" optional="False"/>
+                            <description>The name of the cookie to remove or a previously saved Cookie instance.</description>
+                        </params>
+                        <params>
+                            <param name="options" type="Mixed" optional="True"/>
+                            <description>
+                            </description>
+                        </params>
+                    </function>
+                    <function name="Swiff" returns="Element">
+                        <description>Creates and returns a Flash object using supplied parameters.</description>
+                        <params>
+                            <param name="path" type="DOMString" optional="False"/>
+                            <description>The path to the SWF file.</description>
+                        </params>
+                        <params>
+                            <param name="options" type="Object" optional="True"/>
+                            <description>
+                            </description>
+                        </params>
+                    </function>
+                    <function name="remote" returns="Mixed">
+                        <description>Calls an ActionScript function from JavaScript.</description>
+                        <params>
+                            <param name="obj" type="Element" optional="False"/>
+                            <description>A Swiff instance (an HTML object Element).</description>
+                        </params>
+                        <params>
+                            <param name="fn" type="DOMString" optional="True"/>
+                            <description>The name of the function to execute in the Flash movie.</description>
+                        </params>
+                    </function>
+                    <function name="Fx" returns="void">
+                        <description>This Class will rarely be used on its own, but provides the foundation for all custom Fx Classes. All of the other Fx Classes inherit from this one.</description>
+                        <params>
+                            <param name="options" type="Array" optional="True"/>
+                            <description>An object with options for the effect.</description>
+                        </params>
+                    </function>
+                    <function name="start" returns="object">
+                        <description>The start method is used to begin a transition. Fires the 'start' event.</description>
+                        <params>
+                            <param name="from" type="Mixed" optional="False"/>
+                            <description>The starting value for the effect. If only one argument is provided, this value will be used as the target value.</description>
+                        </params>
+                        <params>
+                            <param name="to" type="Mixed" optional="True"/>
+                            <description>The target value for the effect.</description>
+                        </params>
+                    </function>
+                    <function name="set" returns="Object">
+                        <description>The set method is fired on every step of a transition. It can also be called manually to set a specific value to be immediately applied to the effect.</description>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to immediately apply to the transition.</description>
+                        </params>
+                    </function>
+                    <function name="cancel" returns="Object">
+                        <description>The cancel method is used to cancel a running transition. Fires the 'cancel' event.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="pause" returns="Object">
+                        <description>Temporarily pause a currently running effect.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="resume" returns="Object">
+                        <description>Resume a previously paused effect.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="set" returns="Object">
+                        <description>Sets the Element's CSS property to the specified value immediately.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The css property to set the value to. Omit this if you use the property option.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="Mixed" optional="False"/>
+                            <description>The value to set the CSS property of this instance to.</description>
+                        </params>
+                    </function>
+                    <function name="start" returns="Object">
+                        <description>Transitions the Element's CSS property to the specified value.</description>
+                        <params>
+                            <param name="property " type="DOMString" optional="False"/>
+                            <description>If not in options) The css property to tween. Omit this if you use the property option.</description>
+                        </params>
+                        <params>
+                            <param name="from" type="Mixed" optional="False"/>
+                            <description>The starting CSS property value for the effect.</description>
+                        </params>
+                        <params>
+                            <param name="to" type="Mixed" optional="False"/>
+                            <description>The target CSS property value for the effect.</description>
+                        </params>
+                    </function>
+                    <function name="tween" returns="Element">
+                        <description>Element shortcut method which immediately transitions any single CSS property of an Element from one value to another.</description>
+                        <params>
+                            <param name="property" type="DOMString" optional="False"/>
+                            <description>The css property you want to animate. Omit this if you previously set the property option.</description>
+                        </params>
+                        <params>
+                            <param name="startvalue" type="Mixed" optional="False"/>
+                            <description>The start value for the transition.</description>
+                        </params>
+                        <params>
+                            <param name="endvalue" type="Mixed" optional="False"/>
+                            <description>The end value for the transition. If this is omitted, startvalue will be used as endvalue.</description>
+                        </params>
+                    </function>
+                    <function name="fade" returns="Element">
+                        <description>Element shortcut method for tween with opacity. Useful for fading an Element in and out or to a certain opacity level.</description>
+                        <params>
+                            <param name="how" type="mixed" optional="true"/>
+                            <description>The opacity level as a number or string representation. Defaults to 'toggle'.</description>
+                        </params>
+                    </function>
+                    <function name="highlight" returns="Element">
+                        <description>Element shortcut method for tweening the background color. Immediately transitions an Element's background color to a specified highlight color then back to its set background color.</description>
+                        <params>
+                            <param name="start" type="DOMString" optional="True"/>
+                            <description>The color from which to start the transition. Defaults to '#ff8'.</description>
+                        </params>
+                        <params>
+                            <param name="end" type="DOMString" optional="True"/>
+                            <description>The background color to return to after the highlight effect. Defaults to Element's set background-color</description>
+                        </params>
+                    </function>
+                    <function name="set" returns="Object">
+                        <description>Sets the Element's CSS properties to the specified values immediately.</description>
+                        <params>
+                            <param name="properties" type="Mixed" optional="False"/>
+                            <description>ither an object of key/value pairs of CSS attributes to change or a string representing a CSS selector which can be found within the CSS of the page. If only one value is given for any CSS property, the transition will be from the current value of that property to the value given.</description>
+                        </params>
+                    </function>
+                    <function name="start" returns="Object">
+                        <description>Executes a transition for any number of CSS properties in tandem.</description>
+                        <params>
+                            <param name="properties" type="Mixed" optional="False"/>
+                            <description>An object of key/value pairs of CSS attributes to change or a string representing a CSS selector which can be found within the CSS of the page. If only one value is given for any CSS property, the transition will be from the current value of that property to the value given.</description>
+                        </params>
+                    </function>
+                    <function name="morph" returns="Element">
+                        <description>Sets a default Fx.Morph instance for an Element.</description>
+                        <params>
+                            <param name="options" type="Object" optional="True"/>
+                            <description>The Fx.Morph options.</description>
+                        </params>
+                    </function>
+                    <function name="setHeader" returns="Object">
+                        <description>Add or modify a header for the request. It will not override headers from the options.</description>
+                        <params>
+                            <param name="name" type="DOMString" optional="False"/>
+                            <description>The name for the header.</description>
+                        </params>
+                        <params>
+                            <param name="value" type="DOMString" optional="False"/>
+                            <description>The value to be assigned.</description>
+                        </params>
+                    </function>
+                    <function name="getHeader" returns="String or Null">
+                        <description>Returns the given response header or null if not found.</description>
+                        <params>
+                            <param name="name" type="DOMString" optional="False"/>
+                            <description>The name of the header to retrieve the value of.</description>
+                        </params>
+                    </function>
+                    <function name="send" returns="Object">
+                        <description>Opens the Request connection and sends the provided data with the specified options.</description>
+                        <params>
+                            <param name="options" type="Object" optional="True"/>
+                            <description>The options for the sent Request. Will also accept data as a query string for compatibility reasons.</description>
+                        </params>
+                    </function>
+                    <function name="cancel" returns="Object">
+                        <description>Cancels the currently running request, if any.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function name="send" returns="Element">
+                        <description>Sends a form or a container of inputs with an HTML request.</description>
+                        <params>
+                            <param name="url" type="DOMString" optional="True"/>
+                            <description>The url you want to send the form or the "container of inputs" to. If url is omitted, the action of the form will be used. url cannot be omitted for "container of inputs".</description>
+                        </params>
+                    </function>
+                    <function name="load" returns="Element">
+                        <description>Updates the content of the Element with a Request.HTML GET request.</description>
+                        <params>
+                            <param name="url" type="DOMString" optional="False"/>
+                            <description>The URL pointing to the server-side document.</description>
+                        </params>
+                    </function>
+                </functions>
+            </global>
+        </module>
+        <module name="event" disabled="False">
+            <interfaces>
+                <interface name="event" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="MooTools" name="shift"/>
+                        <attribute readonly="True" type="MooTools" name="control"/>
+                        <attribute readonly="True" type="MooTools" name="alt"/>
+                        <attribute readonly="True" type="MooTools" name="meta"/>
+                        <attribute readonly="True" type="MooTools" name="wheel"/>
+                        <attribute readonly="True" type="MooTools" name="code"/>
+                        <attribute readonly="True" type="MooTools" name="page.x"/>
+                        <attribute readonly="True" type="MooTools" name="page.y"/>
+                        <attribute readonly="True" type="MooTools" name="client.x"/>
+                        <attribute readonly="True" type="MooTools" name="client.y"/>
+                        <attribute readonly="True" type="MooTools" name="key"/>
+                        <attribute readonly="True" type="MooTools" name="target"/>
+                        <attribute readonly="True" type="MooTools" name="relatedTarget"/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+        <module name="browser" disabled="False">
+            <interfaces>
+                <interface name="browser" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="MooTools" name="features"/>
+                        <attribute readonly="True" type="MooTools" name="engine"/>
+                        <attribute readonly="True" type="MooTools" name="platform"/>
+                        <attribute readonly="True" type="MooTools" name="notes"/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+        <module name="browser.features" disabled="False">
+            <interfaces>
+                <interface name="browser.features" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="True if the browser supports DOM queries using XPath." name="xpath"/>
+                        <attribute readonly="True" type="True if the browser supports native XMLHTTP object" name="xhr"/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+        <module name="browser.engine" disabled="False">
+            <interfaces>
+                <interface name="browser.engine" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="True if the current browser uses the trident engine (e.g. Internet Explorer)." name="trident"/>
+                        <attribute readonly="True" type="True if the current browser uses the gecko engine (e.g. Firefox, or any Mozilla Browser)." name="gecko"/>
+                        <attribute readonly="True" type="True if the current browser uses the webkit engine (e.g. Safari, Google Chrome, Konqueror)." name="webkit"/>
+                        <attribute readonly="True" type="True if the current browser uses the presto engine (e.g. Opera 9)." name="presto "/>
+                        <attribute readonly="True" type="The name of the engine." name="name"/>
+                        <attribute readonly="True" type="The version of the engine. (e.g. 950)" name="version"/>
+                        <attribute readonly="True" type="MooTools" name="flash "/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+        <module name="browser.engine.flash" disabled="False">
+            <interfaces>
+                <interface name="browser.engine.flash" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="The major version of the flash plugin installed." name="version"/>
+                        <attribute readonly="True" type="The build version of the flash plugin installed." name="build"/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+        <module name="browser.platform" disabled="False">
+            <interfaces>
+                <interface name="browser.platform" extends="MooTools">
+                    <attributes>
+                        <attribute readonly="True" type="True if the platform is Mac." name="mac"/>
+                        <attribute readonly="True" type="True if the platform is Windows." name="win"/>
+                        <attribute readonly="True" type="True if the platform is Linux." name="linux"/>
+                        <attribute readonly="True" type="True if the platform is an iPod touch / iPhone." name="ipod"/>
+                        <attribute readonly="True" type="True if the platform is neither Mac, Windows, Linux nor iPod." name="other"/>
+                        <attribute readonly="True" type="The name of the platform." name="name"/>
+                    </attributes>
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+    </modules>
+</javascript>

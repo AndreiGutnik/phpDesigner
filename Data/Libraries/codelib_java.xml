@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- PHP DESIGNER 2007. JAVA Code Library. Copyright (c) MPSOFTWARE.  All rights reserved. -->
+<codelib value="Java">
+    <item value="Java" imageindex="3" stateindex="-1" selectedindex="3">
+        <item value="Reserved Words" imageindex="4" stateindex="-1" selectedindex="4">
+            <item value="abstract" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="boolean" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="break" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="byte" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="case" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="catch" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="char" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="class" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="const" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="continue" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="default" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="do" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="double" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="else" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="extends" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="false" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="final" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="finally" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="float" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="for" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="goto" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="if" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="implements" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="import" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="instanceof" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="int" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="interface" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="long" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="native" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="new" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="null" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="package" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="protected" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="public" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="return" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="short" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="static" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="strictfp" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="super" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="switch" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="synchronized" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="this" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="throw" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="throws" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="transient" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="true" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="try" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="void" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="volatile" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="while" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+    </item>
+</codelib>

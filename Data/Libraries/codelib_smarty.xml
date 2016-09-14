@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- PHP DESIGNER 2007. SMARTY Code Library. Copyright (c) MPSOFTWARE.  All rights reserved. -->
+<codelib target="html">
+    <item value="Smarty" imageindex="3" stateindex="-1" selectedindex="3">
+    
+        <item value="Basic Syntax" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="Comment" imageindex="11" stateindex="-1" selectedindex="11"/>
+            <item value="Variable" imageindex="11" stateindex="-1" selectedindex="11"/>
+        </item>  
+		    
+        <item value="Built-in Functions" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="{capture}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>
+            <item value="{config_load}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="section" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="scope" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="global" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>
+            
+            <item value="{foreach}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="from" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="item" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="key" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>        		                
+            </item>  
+    
+            <item value="{foreachelse}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>     
+            <item value="{if}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>     
+            <item value="{elseif}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>     
+            <item value="{else}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>     
+            <item value="{include}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="[var ...]" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{include_php}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="once" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{insert}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="script" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="[var ...]" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{ldelim}{rdelim}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>     
+            <item value="{literal}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>   
+            <item value="{php}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item>  
+            <item value="{config_load}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="section" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="scope" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="global" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>  			
+            <item value="{section}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="loop" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="start" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="step" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="max" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="show" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>  							
+            <item value="{strip}" imageindex="2" stateindex="-1" selectedindex="2">
+            </item> 			  																														          
+        </item>
+
+
+
+
+
+
+
+
+
+        <item value="Custom Functions" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="{assign}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="var" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="value" imageindex="9" stateindex="-1" selectedindex="9"/>
+            </item>
+
+            <item value="{counter}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="start" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="skip" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="direction" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="print" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>
+            
+            <item value="{cycle}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="values" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="print" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="advance" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="delimiter" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="reset" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>  
+    
+            <item value="{debug}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="output" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{eval}" imageindex="2" stateindex="-1" selectedindex="2">
+            	<item value="var" imageindex="9" stateindex="-1" selectedindex="9"/>
+            	<item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{fetch}" imageindex="2" stateindex="-1" selectedindex="2">
+            	<item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+            	<item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>            
+            </item>     
+            <item value="{html_checkboxes}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="values" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="output" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="selected" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="options" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="separator" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="labels" imageindex="0" stateindex="-1" selectedindex="0"/>            
+            </item>     
+            <item value="{html_image}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="file" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="height" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="width" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="basedir" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="alt" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="href" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="path_prefix" imageindex="0" stateindex="-1" selectedindex="0"/>   
+            </item>     
+            <item value="{html_options}" imageindex="2" stateindex="-1" selectedindex="2">                
+				<item value="values" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="output" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="selected" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="options" imageindex="9" stateindex="-1" selectedindex="9"/>                
+				<item value="name" imageindex="0" stateindex="-1" selectedindex="0"/> 
+            </item>     
+            <item value="{html_radios}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="name" imageindex="0" stateindex="-1" selectedindex="0"/>
+				<item value="values" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="output" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="selected" imageindex="0" stateindex="-1" selectedindex="0"/> 
+                <item value="options" imageindex="9" stateindex="-1" selectedindex="9"/>                
+				<item value="separator" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>     
+            <item value="{html_select_date}" imageindex="2" stateindex="-1" selectedindex="2">
+	            <item value="prefix" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="time" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="start_year" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="end_year" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_days" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_months" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_years" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="month_format" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="day_format" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="day_value_format" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="year_as_text" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="reverse_years" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="field_array" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="day_size" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="month_size" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="year_size" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="all_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="day_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="month_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="year_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="field_order" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="field_separator" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="month_value_format" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="year_empty" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="month_empty" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="day_empty" imageindex="0" stateindex="-1" selectedindex="0"/>								            
+            </item>     
+            
+            <item value="{html_select_time}" imageindex="2" stateindex="-1" selectedindex="2">
+	            <item value="prefix" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="time" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_hours" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_minutes" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_seconds" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="display_meridian" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="use_24_hours" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="minute_interval" imageindex="0" stateindex="-1" selectedindex="0"/>	
+	            <item value="second_interval" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="field_array" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="all_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="hour_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="minute_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="second_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="meridian_extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>
+            
+            <item value="{html_table}" imageindex="2" stateindex="-1" selectedindex="2">
+	            <item value="loop" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="cols" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="rows" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="inner" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="table_attr" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="tr_attr" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="td_attr" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="trailpad" imageindex="0" stateindex="-1" selectedindex="0"/>	
+	            <item value="hdir" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="vdir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>               
+            <item value="{mailto}" imageindex="2" stateindex="-1" selectedindex="2">
+	            <item value="address" imageindex="9" stateindex="-1" selectedindex="9"/>
+	            <item value="text" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="encode" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="cc" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="bcc" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="subject" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="newsgroups" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="followupto" imageindex="0" stateindex="-1" selectedindex="0"/>
+	            <item value="extra" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>  
+            <item value="{math}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="equation" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="format" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="var" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="[var ...]" imageindex="9" stateindex="-1" selectedindex="9"/>
+            </item>
+            <item value="{popup_init}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="src" imageindex="9" stateindex="-1" selectedindex="9"/>
+            </item>  					
+            <item value="{popup}" imageindex="2" stateindex="-1" selectedindex="2">
+                <item value="text" imageindex="9" stateindex="-1" selectedindex="9"/>
+                <item value="trigger" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="sticky" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="caption" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="fgcolor" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="bgcolor" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="textcolor" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="capcolor" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="closecolor" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="textfont" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="captionfont" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="closefont" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="textsize" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="captionsize" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="closesize" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="width" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="height" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="left" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="right" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="center" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="above" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="below" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="border" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="offsetx" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="offsety" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="fgbackground" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="bgbackground" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="closetext" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="noclose" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="status" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="autostatus" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="autostatuscap" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="inarray" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="caparray" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="capicon" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="snapx" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="snapy" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="fixx" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="fixy" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="background" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="padx" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="pady" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="fullhtml" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="frame" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="timeout" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="delay" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="hauto" imageindex="0" stateindex="-1" selectedindex="0"/>
+                <item value="vauto" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>  							
+            <item value="{textformat}" imageindex="2" stateindex="-1" selectedindex="2">
+            	<item value="style" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="indent" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="indent_first" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="indent_char" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="wrap" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="wrap_char" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="wrap_cut" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="assign" imageindex="0" stateindex="-1" selectedindex="0"/>
+            	<item value="value" imageindex="0" stateindex="-1" selectedindex="0"/>
+            </item>										  																														          
+        </item>
+
+        
+        <item value="Class Variables" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="$template_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$compile_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$config_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$plugins_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$debugging" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$debug_tpl" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$debugging_ctrl" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$autoload_filters" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$compile_check" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$force_compile" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$caching" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$cache_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$cache_lifetime" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$cache_handler_func" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$cache_modified_check" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$config_overwrite" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$config_booleanize" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$config_read_hidden" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$config_fix_newlines" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$default_template_handler_func" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$php_handling" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$security" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$secure_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$security_settings" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$trusted_dir" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$left_delimiter" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$right_delimiter" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$compiler_class" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$request_vars_order" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$request_use_auto_globals" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$error_reporting" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$compile_id" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$use_sub_dirs" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$default_modifiers" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="$default_resource_type" imageindex="0" stateindex="-1" selectedindex="0"/>			            
+        </item>        
+
+        <item value="Class Methods" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="append()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="append_by_ref()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="assign()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="assign_by_ref()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_all_assign()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_all_cache()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_assign()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_cache()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_compiled_tpl()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear_config()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="config_load()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="display()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="fetch()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="get_config_vars()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="get_registered_object()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="get_template_vars()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="is_cached()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="load_filter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_block()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_compiler_function()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_function()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_modifier()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_object()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_outputfilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_postfilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_prefilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="register_resource()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="trigger_error()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="template_exists()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_block()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_compiler_function()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_function()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_modifier()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_object()" imageindex="0" stateindex="-1" selectedindex="0"/>		
+            <item value="unregister_outputfilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_postfilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_prefilter()" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unregister_resource()" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>        
+
+        
+        
+    </item>
+</codelib>

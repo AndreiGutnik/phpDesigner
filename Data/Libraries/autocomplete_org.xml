@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<autocomplete>
+    <item name="&lt;?php" result="&lt;?php | ?&gt;"/>
+    <item name="&lt;?" result="&lt;? | ?&gt;"/>
+    <item name="&lt;script" result="&lt;script type=&quot;text/javascript&quot;&gt;|&#xA;&lt;/script&gt;"/>
+    <item name="while" result="while (|) {&#xA;&#xA;}"/>
+    <item name="foreach" result="foreach ($| as $) {&#xA;&#xA;}"/>
+    <item name="for" result="for ($|;$;) {&#xA;&#xA;}"/>
+    <item name="if" result="if (|) {&#xA;&#xA;}"/>
+    <item name="switch" result="switch (|) {&#xA;   case :&#xA;   case :&#xA;   case :&#xA;}"/>
+    <item name="function" result="function |() {&#xA;&#xA;}"/>
+    <item name="class" result="class | {&#xA;&#xA;}"/>
+    <item name="&lt;" result="&lt;|&gt;&lt;/&gt;"/>
+    <item name="&quot;" result="&quot;|&quot;"/>
+    <item name="&lt;a&gt;" result="&lt;a&gt;|&lt;/a&gt;"/>
+    <item name="&lt;b&gt;" result="&lt;b&gt;|&lt;/b&gt;"/>
+    <item name="&lt;i&gt;" result="&lt;i&gt;|&lt;/i&gt;"/>
+    <item name="&lt;u&gt;" result="&lt;u&gt;|&lt;/u&gt;"/>
+    <item name="&lt;p&gt;" result="&lt;p&gt;|&lt;/p&gt;"/>
+    <item name="&lt;html&gt;" result="&lt;html&gt;|&lt;/html&gt;"/>
+    <item name="&lt;body&gt;" result="&lt;body&gt;|&lt;/body&gt;"/>
+    <item name="&lt;head&gt;" result="&lt;head&gt;|&lt;/head&gt;"/>
+    <item name="&lt;title&gt;" result="&lt;title&gt;|&lt;/title&gt;"/>
+    <item name="&lt;center&gt;" result="&lt;center&gt;|&lt;/center&gt;"/>
+    <item name="&lt;acronym&gt;" result="&lt;acronym&gt;|&lt;/acronym&gt;"/>
+    <item name="&lt;address&gt;" result="&lt;address&gt;|&lt;/address&gt;"/>
+    <item name="&lt;applet&gt;" result="&lt;applet&gt;|&lt;/applet&gt;"/>
+    <item name="&lt;bdo&gt;" result="&lt;bdo&gt;|&lt;/bdo&gt;"/>
+    <item name="&lt;big&gt;" result="&lt;big&gt;|&lt;/big&gt;"/>
+    <item name="&lt;blockquote&gt;" result="&lt;blockquote&gt;|&lt;/blockquote&gt;"/>
+    <item name="&lt;caption&gt;" result="&lt;caption&gt;|&lt;/caption&gt;"/>
+    <item name="&lt;cite&gt;" result="&lt;cite&gt;|&lt;/cite&gt;"/>
+    <item name="&lt;dd&gt;" result="&lt;dd&gt;|&lt;/dd&gt;"/>
+    <item name="&lt;del&gt;" result="&lt;del&gt;|&lt;/del&gt;"/>
+    <item name="&lt;dfn&gt;" result="&lt;dfn&gt;|&lt;/dfn&gt;"/>
+    <item name="&lt;dir&gt;" result="&lt;dir&gt;|&lt;/dir&gt;"/>
+    <item name="&lt;div&gt;" result="&lt;div&gt;|&lt;/div&gt;"/>
+    <item name="&lt;dl&gt;" result="&lt;dl&gt;|&lt;/dl&gt;"/>
+    <item name="&lt;dt&gt;" result="&lt;dt&gt;|&lt;/dt&gt;"/>
+    <item name="&lt;em&gt;" result="&lt;em&gt;|&lt;/em&gt;"/>
+    <item name="&lt;fieldset&gt;" result="&lt;fieldset&gt;|&lt;/fieldset&gt;"/>
+    <item name="&lt;font&gt;" result="&lt;font&gt;|&lt;/font&gt;"/>
+    <item name="&lt;form&gt;" result="&lt;form&gt;|&lt;/form&gt;"/>
+    <item name="&lt;frameset&gt;" result="&lt;frameset&gt;|&lt;/frameset&gt;"/>
+    <item name="&lt;h1&gt;" result="&lt;h1&gt;|&lt;/h1&gt;"/>
+    <item name="&lt;h2&gt;" result="&lt;h2&gt;|&lt;/h2&gt;"/>
+    <item name="&lt;h3&gt;" result="&lt;h3&gt;|&lt;/h3&gt;"/>
+    <item name="&lt;h4&gt;" result="&lt;h4&gt;|&lt;/h4&gt;"/>
+    <item name="&lt;h5&gt;" result="&lt;h5&gt;|&lt;/h5&gt;"/>
+    <item name="&lt;h6&gt;" result="&lt;h6&gt;|&lt;/h6&gt;"/>
+    <item name="&lt;iframe&gt;" result="&lt;iframe&gt;|&lt;/iframe&gt;"/>
+    <item name="&lt;ins&gt;" result="&lt;ins&gt;|&lt;/ins&gt;"/>
+    <item name="&lt;kbd&gt;" result="&lt;kbd&gt;|&lt;/kbd&gt;"/>
+    <item name="&lt;label&gt;" result="&lt;label&gt;|&lt;/label&gt;"/>
+    <item name="&lt;legend&gt;" result="&lt;legend&gt;|&lt;/legend&gt;"/>
+    <item name="&lt;li&gt;" result="&lt;li&gt;|&lt;/li&gt;"/>
+    <item name="&lt;map&gt;" result="&lt;map&gt;|&lt;/map&gt;"/>
+    <item name="&lt;menu&gt;" result="&lt;menu&gt;|&lt;/menu&gt;"/>
+    <item name="&lt;noframes&gt;" result="&lt;noframes&gt;|&lt;/noframes&gt;"/>
+    <item name="&lt;noscript&gt;" result="&lt;noscript&gt;|&lt;/noscript&gt;"/>
+    <item name="&lt;object&gt;" result="&lt;object&gt;|&lt;/object&gt;"/>
+    <item name="&lt;ol&gt;" result="&lt;ol&gt;|&lt;/ol&gt;"/>
+    <item name="&lt;option&gt;" result="&lt;option&gt;|&lt;/option&gt;"/>
+    <item name="&lt;pre&gt;" result="&lt;pre&gt;|&lt;/pre&gt;"/>
+    <item name="&lt;code&gt;" result="&lt;code&gt;|&lt;/code&gt;"/>
+    <item name="&lt;q&gt;" result="&lt;q&gt;|&lt;/q&gt;"/>
+    <item name="&lt;s&gt;" result="&lt;s&gt;|&lt;/s&gt;"/>
+    <item name="&lt;samp&gt;" result="&lt;samp&gt;|&lt;/samp&gt;"/>
+    <item name="&lt;script&gt;" result="&lt;script&gt;|&lt;/script&gt;"/>
+    <item name="&lt;small&gt;" result="&lt;small&gt;|&lt;/small&gt;"/>
+    <item name="&lt;span&gt;" result="&lt;span&gt;|&lt;/span&gt;"/>
+    <item name="&lt;strike&gt;" result="&lt;strike&gt;|&lt;/strike&gt;"/>
+    <item name="&lt;strong&gt;" result="&lt;strong&gt;|&lt;/strong&gt;"/>
+    <item name="&lt;style&gt;" result="&lt;style&gt;|&lt;/style&gt;"/>
+    <item name="&lt;sub&gt;" result="&lt;sub&gt;|&lt;/sub&gt;"/>
+    <item name="&lt;sup&gt;" result="&lt;sup&gt;|&lt;/sup&gt;"/>
+    <item name="&lt;table&gt;" result="&lt;table&gt;|&lt;/table&gt;"/>
+    <item name="&lt;tbody&gt;" result="&lt;tbody&gt;|&lt;/tbody&gt;"/>
+    <item name="&lt;td&gt;" result="&lt;td&gt;|&lt;/td&gt;"/>
+    <item name="&lt;textarea&gt;" result="&lt;textarea&gt;|&lt;/textarea&gt;"/>
+    <item name="&lt;tfoot&gt;" result="&lt;tfoot&gt;|&lt;/tfoot&gt;"/>
+    <item name="&lt;th&gt;" result="&lt;th&gt;|&lt;/th&gt;"/>
+    <item name="&lt;thead&gt;" result="&lt;thead&gt;|&lt;/thead&gt;"/>
+    <item name="&lt;tr&gt;" result="&lt;tr&gt;|&lt;/tr&gt;"/>
+    <item name="&lt;tt&gt;" result="&lt;tt&gt;|&lt;/tt&gt;"/>
+    <item name="&lt;ul&gt;" result="&lt;ul&gt;|&lt;/ul&gt;"/>
+    <item name="&lt;var&gt;" result="&lt;var&gt;|&lt;/var&gt;"/>
+    <item name="/**" result="/** | **/"/>
+    <item name="&lt;!--" result="&lt;!-- | --&gt;"/>
+</autocomplete>

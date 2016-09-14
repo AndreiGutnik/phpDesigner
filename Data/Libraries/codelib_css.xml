@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- PHP DESIGNER 2007. CSS Code Library. Copyright (c) MPSOFTWARE.  All rights reserved. -->
+<codelib target="CSS">
+    <item value="CSS 2" imageindex="3" stateindex="-1" selectedindex="3">
+        <item value="Background" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="background" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="background-attachment" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="background-color" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="background-image" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="background-position" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="background-repeat" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Border" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="border" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-bottom-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-color" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-right-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-style" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-top-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="border-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="margin-" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="margin-bottom" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="margin-left" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="margin-right" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="margin-top" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="padding" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="padding-bottom" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="padding-left" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="padding-right" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="padding-top" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Classification" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="content" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="counter-increment" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="counter-reset" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="list-style" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="list-style-image" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="list-style-position" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="list-style-type" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="marker-offset" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="quotes" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Effects" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="clip" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="overflow" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="visibility" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Font" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="color" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-family" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-size" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-size-adjust" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-stretch" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-style" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-variant" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="font-weight" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Layout" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="cursor" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="outline" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="outline-color" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="outline-style" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="outline-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Page" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="marks" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="orphans" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="page" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="page-break-after" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="page-break-before" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="page-break-inside" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="size" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="windows" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Position" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="bottom" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="clear" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="direction" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="display" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="float" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="height" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="left" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="line-height" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="max-height" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="max-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="min-height" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="min-width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="position" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="right" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="top" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unicode-bidi" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="vertical-align" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="width" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="z-index" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+        <item value="Text" imageindex="1" stateindex="-1" selectedindex="1">
+            <item value="letter-spacing" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="text-align" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="text-decoration" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="text-indent" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="text-shadow" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="text-transform" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="white-space" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="word-spacing" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+    </item>
+</codelib>

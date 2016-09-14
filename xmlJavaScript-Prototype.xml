@@ -1,0 +1,1540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright MPSOFTWARE -->
+<javascript>
+    <modules>
+        <module name="Prototype 1.7" disabled="False">
+            <interfaces>
+                <interface name="Prototype" extends="Object">
+                    <functions>
+                    </functions>
+                </interface>
+            </interfaces>
+            <global>
+                <functions>
+                    <function name="$" returns="Element">
+                        <description>If provided with a string, returns the element in the document with matching ID; otherwise returns the passed element. Takes in an arbitrary number of arguments. All elements returned by the function are extended with Prototype DOM extensions.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$$" returns="Element">
+                        <description>Takes an arbitrary number of CSS selectors (strings) and returns a document-order array of extended DOM elements that match any of them.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$A" returns="Array">
+                        <description>
+                        </description>
+                        <params>
+                            <param name="iterable" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$F" returns="Value">
+                        <description>Returns the value of a form control. This is a convenience alias of Form.Element.getValue. Refer to it for full details.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$H" returns="Hash">
+                        <description>Creates a Hash (which is synonymous to “map” or “associative array” for our purposes). A convenience wrapper around the Hash constructor, with a safeguard that lets you pass an existing Hash object and get it back untouched (instead of uselessly cloning it).</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$R" returns="Object">
+                        <description>Creates a new ObjectRange object. This method is a convenience wrapper around the ObjectRange constructor, but $R is the preferred alias.</description>
+                        <params>
+                            <param name="Mixed" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="$w" returns="Array">
+                        <description>Splits a string into an Array, treating all whitespace as delimiters. Equivalent to Ruby's %w{foo bar} or Perl's qw(foo bar).</description>
+                        <params>
+                            <param name="string" type="String" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="Try.these" returns="Prototype">
+                        <description>Accepts an arbitrary number of functions and returns the result of the first one that doesn't throw an error.</description>
+                        <params>
+                            <param name="function" type="Function" optional="False"/>
+                        </params>
+                    </function>
+                    
+                    <function name="clear" returns="Array">
+                        <description>Clears the array (makes it empty).</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="clone" returns="Array">
+                        <description>Returns a duplicate of the array, leaving the original array intact.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="compact" returns="Array">
+                        <description>Returns a new version of the array, without any null/undefined values.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="each" returns="Array">
+                        <description>Iterates over the array in ascending numerical index order.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="first" returns="Array">
+                        <description>Returns the first item in the array, or undefined if the array is empty.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="flatten" returns="Array">
+                        <description>Returns a “flat” (one-dimensional) version of the array. Nested arrays are recursively injected “inline.” This can prove very useful when handling the results of a recursive collection algorithm, for instance.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="from" returns="Array">
+                        <description>Clones an existing array or creates a new one from an array-like collection.</description>
+                        <params>
+                            <param name="iterable" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="indexOf" returns="Position">
+                        <description>Returns the position of the first occurrence of the argument within the array. If the argument doesn’t exist in the array, returns -1.</description>
+                        <params>
+                            <param name="value" type="Value" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inspect" returns="String">
+                        <description>Returns the debug-oriented string representation of an array.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="last" returns="Value">
+                        <description>Returns the last item in the array, or undefined if the array is empty.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="reduce" returns="Value">
+                        <description>Reduces arrays: one-element arrays are turned into their unique element, while multiple-element arrays are returned untouched.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="size" returns="Number">
+                        <description>Returns the size of the array.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toArray" returns="Array">
+                        <description>This is just a local optimization of the mixed-in toArray from Enumerable.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Returns a JSON string.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="uniq" returns="Array">
+                        <description>Produces a duplicate-free version of an array. If no duplicates are found, the original array is returned.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="without" returns="Array">
+                        <description>Produces a new version of the array that does not contain any of the specified values.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="addMethods" returns="void">
+                        <description>Adds methods to an existing class.</description>
+                        <params>
+                            <param name="methods" type="Methods" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="create" returns="Class">
+                        <description>Creates a class.</description>
+                        <params>
+                            <param name="mixed" type="Mixed" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Converts the date into a JSON string (following the ISO format used by JSON).</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Element -->
+                    <function name="absolutize" returns="HTMLElement">
+                        <description>Turns element into an absolutely-positioned element without changing its position in the page layout.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="addClassName" returns="HTMLElement">
+                        <description>Adds a CSS class to element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="className" type="className" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="addMethods" returns="HTMLElement">
+                        <description>Takes a hash of methods and makes them available as methods of extended elements and of the Element object. The second usage form is for targeting a specific HTML element.</description>
+                        <params>
+                            <param name="tagName" type="tagName" optional="False"/>
+                            <param name="methods" type="Methods" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="adjacent" returns="HTMLElement">
+                        <description>Finds all siblings of the current element that match the given selector(s).</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="ancestors" returns="HTMLElement">
+                        <description>Collects all of element’s ancestors and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="childElements" returns="HTMLElement">
+                        <description>Collects all of the element's children and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="classNames" returns="HTMLElement">
+                        <description>Returns a new instance of ClassNames, an Enumerable object used to read and write CSS class names of element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="cleanWhitespace" returns="HTMLElement">
+                        <description>Removes all of element's text nodes which contain only whitespace. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="clonePosition" returns="HTMLElement">
+                        <description>Clones the position and/or dimensions of source onto element as defined by the optional argument options. </description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="source" type="source" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="cumulativeOffset" returns="Number">
+                        <description>Returns the offsets of element from the top left corner of the document.</description>
+                        <params>
+                            <param name="source" type="source" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="cumulativeScrollOffset" returns="Number">
+                        <description>Calculates the cumulative scroll offset of an element in nested scrolling containers.</description>
+                        <params>
+                            <param name="source" type="source" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="descendantOf" returns="Boolean">
+                        <description>Checks if element is a descendant of ancestor.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="ancestor" type="Ancestor" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="descendants" returns="HTMLElement">
+                        <description>Collects all of element’s descendants and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="down" returns="HTMLElement">
+                        <description>Returns element’s first descendant (or the n-th descendant if index is specified) that matches cssRule. If no cssRule is provided, all descendants are considered. If no descendant matches these criteria, undefined is returned.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="empty" returns="Boolean">
+                        <description>Tests whether element is empty (i.e. contains only whitespace).</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="extend" returns="void">
+                        <description>Extends element with all of the methods contained in Element.Methods and Element.Methods.Simulated. If element is an input, textarea or select tag, it will also be extended with the methods from Form.Element.Methods. If it is a form tag, it will also be extended with Form.Methods.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="fire" returns="Event">
+                        <description>Fires a custom event with the current element as its target.</description>
+                        <params>
+                            <param name="eventName" type="eventName" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="firstDescendant" returns="HTMLElement">
+                        <description>Returns the first child that is an element. This is opposed to firstChild DOM property which will return any node (whitespace in most usual cases).</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getDimensions" returns="Number">
+                        <description>Finds the computed width and height of element and returns them as key/value pairs of an object.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getElementsByClassName" returns="HTMLElement">
+                        <description>Fetches all of element’s descendants which have a CSS class of className and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="selector" type="Selector" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getElementsBySelector" returns="HTMLElement">
+                        <description>Takes an arbitrary number of CSS selectors (strings) and returns an array of extended children of element that match any of them.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="selector" type="Selector" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getHeight" returns="Number">
+                        <description>Finds and returns the computed height of element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getOffsetParent" returns="HTMLElement">
+                        <description>Returns element’s closest positioned ancestor. If none is found, the body element is returned.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getStyle" returns="String | null">
+                        <description>Returns the given CSS property value of element. property can be specified in either of its CSS or camelized form.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="property" type="Property" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getWidth" returns="Number">
+                        <description>Finds and returns the computed width of element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="hasClassName" returns="Boolean">
+                        <description>Checks whether element has the given CSS className.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="className" type="className" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="hide" returns="HTMLElement">
+                        <description>Hides and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="identify" returns="ID">
+                        <description>returns element’s id attribute if it exists, or sets and returns a unique, auto-generated id.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="immediateDescendants" returns="HTMLElement">
+                        <description>Collects all of the element’s immediate descendants (i.e. children) and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="insert" returns="HTMLElement">
+                        <description>Inserts content before, after, at the top of, or at the bottom of element, as specified by the position property of the second argument. If the second argument is the content itself, insert will append it to element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="content" type="Content" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inspect" returns="String">
+                        <description>Returns the debug-oriented string representation of element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="makeClipping" returns="HTMLElement">
+                        <description>Simulates the poorly supported CSS clip property by setting element's overflow value to 'hidden'. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="makePositioned" returns="HTMLElement">
+                        <description>Allows for the easy creation of CSS containing block by setting element's CSS position to 'relative' if its initial position is either 'static' or undefined. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="match" returns="Boolean">
+                        <description>Checks if element matches the given CSS selector.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="selector" type="Selector" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="next" returns="HTMLElement">
+                        <description>Returns element’s following sibling (or the index’th one, if index is specified) that matches cssRule. If no cssRule is provided, all following siblings are considered. If no following sibling matches these criteria, undefined is returned.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="nextSiblings" returns="HTMLElement">
+                        <description>Collects all of element’s next siblings and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="observe" returns="HTMLElement">
+                        <description>Registers an event handler on element and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="eventName" type="Event" optional="False"/>
+                            <param name="handler" type="Handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="positionedOffset" returns="Number">
+                        <description>Returns element’s offset relative to its closest positioned ancestor (the element that would be returned by Element#getOffsetParent).</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="previous" returns="HTMLElement">
+                        <description>Returns element's previous sibling (or the index'th one, if index is specified) that matches cssRule. If no cssRule is provided, all previous siblings are considered. If no previous sibling matches these criteria, undefined is returned.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="previousSiblings" returns="HTMLElement">
+                        <description>Collects all of element’s previous siblings and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="readAttribute" returns="String | null">
+                        <description>Returns the value of element's attribute or null if attribute has not been specified.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="recursivelyCollect" returns="HTMLElement">
+                        <description>Recursively collects elements whose relationship is specified by property. property has to be a property (a method won’t do!) of element that points to a single DOM node. Returns an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="property" type="Property" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="relativize" returns="HTMLElement">
+                        <description>Turns element into an relatively-positioned element without changing its position in the page layout.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="remove" returns="HTMLElement">
+                        <description>Completely removes element from the document and returns it.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="removeClassName" returns="HTMLElement">
+                        <description>Removes element’s CSS className and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="replace" returns="HTMLElement">
+                        <description>Replaces element by the content of the html argument and returns the removed element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="scrollTo" returns="HTMLElement">
+                        <description>Scrolls the window so that element appears at the top of the viewport. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="select" returns="HTMLElement">
+                        <description>Takes an arbitrary number of CSS selectors (strings) and returns an array of extended descendants of element that match any of them.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="selector" type="Selector" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="setOpacity" returns="HTMLElement">
+                        <description>Sets the visual opacity of an element while working around inconsistencies in various browsers. The opacity argument should be a floating point number, where the value of 0 is fully transparent and 1 is fully opaque.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="opacity" type="Opacity" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="setStyle" returns="HTMLElement">
+                        <description>Modifies element’s CSS style properties. Styles are passed as a hash of property-value pairs in which the properties are specified in their camelized form.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="styles" type="Styles" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="show" returns="HTMLElement">
+                        <description>Displays and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="siblings" returns="HTMLElement">
+                        <description>Collects all of element’s siblings and returns them as an array of extended elements.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stopObserving" returns="HTMLElement">
+                        <description>Unregisters handler and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="eventName" type="eventName" optional="False"/>
+                            <param name="handler" type="handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toggle" returns="HTMLElement">
+                        <description>Toggles the visibility of element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toggleClassName" returns="HTMLElement">
+                        <description>Toggles element’s CSS className and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="className" type="className" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="undoClipping" returns="HTMLElement">
+                        <description>Sets element’s CSS overflow property back to the value it had before Element.makeClipping() was applied. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="undoPositioned" returns="HTMLElement">
+                        <description>Sets element back to the state it was before Element.makePositioned was applied to it. Returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="up" returns="HTMLElement">
+                        <description>Returns element’s first ancestor (or the index’th ancestor, if index is specified) that matches cssRule. If no cssRule is provided, all ancestors are considered. If no ancestor matches these criteria, undefined is returned.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="cssRule" type="cssRule" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="update" returns="HTMLElement">
+                        <description>Replaces the content of element with the provided newContent argument and returns element.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="viewportOffset" returns="Number">
+                        <description>Returns the X/Y coordinates of element relative to the viewport.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="visible" returns="Boolean">
+                        <description>Returns a Boolean indicating whether or not element is visible (i.e. whether its inline style property is set to "display: none;").</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="wrap" returns="HTMLElement">
+                        <description>Wraps an element inside another, then returns the wrapper.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="wrapper" type="Wrapper" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="writeAttribute" returns="HTMLElement">
+                        <description>Adds, specifies or removes attributes passed as either a hash or a name/value pair.</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="attribute" type="Attribute" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="hasAttribute" returns="HTMLElement">
+                        <description>Simulates the standard compliant DOM method hasAttribute for browsers missing it (Internet Explorer 6 and 7).</description>
+                        <params>
+                            <param name="element" type="Element" optional="False"/>
+                            <param name="attribute" type="Attribute" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Element -->
+                    <!-- Enumerable -->
+                    <function name="all" returns="Boolean">
+                        <description>Determines whether all the elements are boolean-equivalent to true, either directly or through computation by the provided iterator.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="any" returns="Boolean">
+                        <description>Determines whether at least one element is boolean-equivalent to true, either directly or through computation by the provided iterator.</description>
+                        <params>
+                            <param name="iterator " type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="collect" returns="Array">
+                        <description>Returns the results of applying the iterator to each element. Aliased as map.</description>
+                        <params>
+                            <param name="iterator " type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="detect" returns="firstElement">
+                        <description>Finds the first element for which the iterator returns true. Aliased by the find method.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="each" returns="Enumerable">
+                        <description>The cornerstone of Enumerable. It lets you iterate over all the elements in a generic fashion, then returns the Enumerable, thereby allowing chain-calling.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="eachSlice" returns="Array">
+                        <description>Groups items in chunks based on a given size, with last chunk being possibly smaller.</description>
+                        <params>
+                            <param name="size" type="Value" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="entries" returns="Array">
+                        <description>Alias for the more generic toArray method.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="find" returns="firstElement">
+                        <description>Finds the first element for which the iterator returns true. Convenience alias for detect, but constitutes the preferred (more readable) syntax.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="findAll" returns="Array">
+                        <description>Returns all the elements for which the iterator returned true. Aliased as select.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="grep" returns="Array">
+                        <description>Returns all the elements that match the filter. If an iterator is provided, it is used to produce the returned value for each selected element.</description>
+                        <params>
+                            <param name="regex" type="regex" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inGroupsOf" returns="Array">
+                        <description>Groups items in fixed-size chunks, using a specific value to fill up the last chunk if necessary.</description>
+                        <params>
+                            <param name="size" type="size" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="include" returns="Boolean">
+                        <description>Determines whether a given object is in the Enumerable or not, based on the == comparison operator. Aliased as member.</description>
+                        <params>
+                            <param name="object" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inject" returns="accumulatedValue">
+                        <description>Incrementally builds a result value based on the successive results of the iterator. This can be used for array construction, numerical sums/averages, etc.</description>
+                        <params>
+                            <param name="accumulator" type="accumulator" optional="False"/>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="invoke" returns="Array">
+                        <description>Invokes the same method, with the same arguments, for all items in a collection. Returns the results of the method calls.</description>
+                        <params>
+                            <param name="methodName" type="methodName" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="map" returns="Array">
+                        <description>Returns the results of applying the iterator to each element. Convenience alias for collect.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="max" returns="maxValue">
+                        <description>Returns the maximum element (or element-based computation), or undefined if the enumeration is empty. Elements are either compared directly, or by first applying the iterator and comparing returned values.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="member" returns="Boolean">
+                        <description>Determines whether a given object is in the Enumerable or not, based on the == comparison operator. Convenience alias for include.</description>
+                        <params>
+                            <param name="object" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="min" returns="minValue">
+                        <description>Returns the minimum element (or element-based computation), or undefined if the enumeration is empty. Elements are either compared directly, or by first applying the iterator and comparing returned values.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="partition" returns="Array">
+                        <description>Partitions the elements in two groups: those regarded as true, and those considered false. By default, regular JavaScript boolean equivalence is used, but an iterator can be provided, that computes a boolean representation of the elements.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="pluck" returns="Array">
+                        <description>Optimization for a common use-case of collect: fetching the same property for all the elements. Returns the property values.</description>
+                        <params>
+                            <param name="propertyName" type="propertyName" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="reject" returns="Array">
+                        <description>Returns all the elements for which the iterator returned false.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="select" returns="Array">
+                        <description>Alias for the findAll method.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="size" returns="Number">
+                        <description>Returns the size of the enumeration.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="sortBy" returns="Array">
+                        <description>Provides a custom-sorted view of the elements based on the criteria computed, for each element, by the iterator.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toArray" returns="Array">
+                        <description>Returns an Array representation of the enumeration. Aliased as entries.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="zip" returns="Array">
+                        <description>Zips together (think of the zip on a pair of trousers) 2+ sequences, providing an array of tuples. Each tuple contains one value per original sequence. Tuples can be converted to something else by applying the optional iterator on them.</description>
+                        <params>
+                            <param name="Sequence" type="Sequence" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Enumerable -->
+                    <!-- Event -->
+                    <function name="element" returns="Element">
+                        <description>Returns the DOM element on which the event occurred.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="extend" returns="Element">
+                        <description>Extends event with all of the methods contained in Event.Methods.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="findElement" returns="Element">
+                        <description>Returns the first DOM element with a given tag name, upwards from the one on which the event occurred.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                            <param name="tagName" type="tagName" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isLeftClick" returns="Boolean">
+                        <description>Determines whether a button-related mouse event was about the “left” (primary, actually) button.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="observe" returns="Void">
+                        <description>Registers an event handler on a DOM element.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                            <param name="eventName" type="eventName" optional="False"/>
+                            <param name="handler" type="handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="pointerX" returns="Number">
+                        <description>Returns the absolute horizontal position for a mouse event.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="pointerY" returns="Number">
+                        <description>Returns the absolute vertical position for a mouse event.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stop" returns="Void">
+                        <description>Stops the event’s propagation and prevents its default action from being triggered eventually.</description>
+                        <params>
+                            <param name="event" type="event" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stopObserving" returns="Void">
+                        <description>Unregisters one or more event handlers.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                            <param name="eventName" type="eventName" optional="False"/>
+                            <param name="handler" type="handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="unloadCache" returns="Void">
+                        <description>Unregisters all event handlers registered through observe. Automatically wired for you. Not available since 1.6.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Event -->
+                    <!-- Form -->
+                    <function name="disable" returns="HTMLFormElement">
+                        <description>Disables the form as whole. Form controls will be visible but uneditable.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="enable" returns="HTMLFormElement">
+                        <description>Enables a fully or partially disabled form.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="findFirstElement" returns="HTMLFormElement">
+                        <description>Finds first non-hidden, non-disabled form control.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="focusFirstElement" returns="HTMLFormElement">
+                        <description>Gives keyboard focus to the first element of the form.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getElements" returns="Array">
+                        <description>Returns a collection of all form controls within a form.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getInputs" returns="Array">
+                        <description>Returns a collection of all INPUT elements in a form. Use optional type and name arguments to restrict the search on these attributes.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="request" returns="new Ajax.Request">
+                        <description>A convenience method for serializing and submitting the form via an Ajax.Request to the URL of the form’s action attribute. The options parameter is passed to the Ajax.Request instance, allowing to override the HTTP method and to specify additional parameters.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="reset" returns="HTMLFormElement">
+                        <description>Resets a form to its default values.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="serialize" returns="String | object">
+                        <description>Serialize form data to a string suitable for Ajax requests (default behavior) or, if optional getHash evaluates to true, an object hash where keys are form control names and values are data.</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="serializeElements" returns="String">
+                        <description>Serialize an array of form elements to a string suitable for Ajax requests (default behavior) or, if optional getHash evaluates to true, an object hash where keys are form control names and values are data..</description>
+                        <params>
+                            <param name="formElement" type="formElement" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Form -->
+                    <!-- Form Element -->
+                    <function name="activate" returns="HTMLElement">
+                        <description>Gives focus to a form control and selects its contents if it is a text input.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="clear" returns="HTMLElement">
+                        <description>Clears the contents of a text input.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="disable" returns="HTMLElement">
+                        <description>Disables a form control, effectively preventing its value to be changed until it is enabled again.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="enable" returns="HTMLElement">
+                        <description>Enables a previously disabled form control.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="focus" returns="HTMLElement">
+                        <description>Gives keyboard focus to an element.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getValue" returns="String | Array">
+                        <description>Returns the current value of a form control. A string is returned for most controls; only multiple select boxes return an array of values. The global shortcut for this method is $F().</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="present" returns="Boolean">
+                        <description>Returns true if a text input has contents, false otherwise.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="select" returns="HTMLElement">
+                        <description>Selects the current text in a text input.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="serialize" returns="String">
+                        <description>Creates an URL-encoded string representation of a form control in the name=value format.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Form Element -->
+                    <!-- Function -->
+                    <function name="argumentNames" returns="Array">
+                        <description>Reads the argument names as defined in the function definition and returns the values as an array of strings, or an empty array if the function is defined without parameters.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="bind" returns="Function">
+                        <description>Wraps the function in another, locking its execution scope to an object specified by thisObj.</description>
+                        <params>
+                            <param name="thisObj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="bindAsEventListener" returns="Function">
+                        <description>An event-specific variant of bind which makes sure the function will recieve the current event object as the first argument when executing.</description>
+                        <params>
+                            <param name="thisObj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="curry" returns="Function">
+                        <description>Partially applies the function, returning a function with one or more arguments already “filled in.”</description>
+                        <params>
+                            <param name="arg" type="Argument" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="defer" returns="Number">
+                        <description>Schedules the function to run as soon as the interpreter is idle.</description>
+                        <params>
+                            <param name="arg" type="Argument" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="delay" returns="Number">
+                        <description>Schedules the function to run after the specified amount of time, passing any arguments given.</description>
+                        <params>
+                            <param name="seconds" type="Value" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="methodize" returns="Function">
+                        <description>Takes a function and wraps it in another function that, at call time, pushes this to the original function as the first argument.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="wrap" returns="Function">
+                        <description>Returns a function “wrapped” around the original function.</description>
+                        <params>
+                            <param name="wrapperFunction" type="wrapperFunction" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Function -->
+                    <!-- Hash -->
+                    <function name="clone" returns="newHash">
+                        <description>Returns a clone of hash.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="each" returns="Hash">
+                        <description>Iterates over the name/value pairs in the hash.</description>
+                        <params>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="get" returns="Value">
+                        <description>Returns the value of the hash’s key property.</description>
+                        <params>
+                            <param name="key" type="key" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inspect" returns="String">
+                        <description>Returns the debug-oriented string representation of the hash.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="keys" returns="Array">
+                        <description>Provides an Array of keys (that is, property names) for the hash.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="merge" returns="newHash">
+                        <description>Merges object to hash and returns the result of that merge. Prior to v1.6.0: This was destructive (object's values were added to hash). Since v1.6.0: This is no longer destructive (hash is cloned before the operation).</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="remove" returns="Array">
+                        <description>Removes keys from a hash and returns their values. Not available since v1.6.0. (deprecated)</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="set" returns="Value">
+                        <description>Sets the hash’s key property to value and returns value.</description>
+                        <params>
+                            <param name="key" type="key" optional="False"/>
+                            <param name="value" type="value" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Returns a JSON string.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toObject" returns="String">
+                        <description>Returns a cloned, vanilla object.</description>
+                        <params>
+                            <param name="Object" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toQueryString" returns="String">
+                        <description>Turns a hash into its URL-encoded query string representation.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="unset" returns="Value">
+                        <description>Deletes the hash’s key property and returns its value.</description>
+                        <params>
+                            <param name="key" type="key" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="update" returns="Hash">
+                        <description>Updates hash with the key/value pairs of object. The original hash will be modified.</description>
+                        <params>
+                            <param name="object" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="values" returns="Array">
+                        <description>Collect the values of a hash and returns them in an array.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Hash -->
+                    <!-- Number -->
+                    <function name="abs" returns="Number">
+                        <description>Returns the absolute value of the number.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="ceil" returns="Number">
+                        <description>Returns the smallest integer greater than or equal to the number.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="floor" returns="Number">
+                        <description>Returns the largest integer less than or equal to the number.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="round" returns="Number">
+                        <description>Rounds the number to the nearest integer.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="succ" returns="Number">
+                        <description>Returns the successor of the current Number, as defined by current + 1. Used to make numbers compatible with ObjectRange.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="times" returns="Number">
+                        <description>Encapsulates a regular [0..n[ loop, Ruby-style.]]</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toColorPart" returns="String">
+                        <description>Produces a 2-digit hexadecimal representation of the number (which is therefore assumed to be in the [0..255] range). Useful for composing CSS color strings.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Returns a JSON string.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toPaddedString" returns="String">
+                        <description>Converts the number into a string padded with 0s so that the string’s length is at least equal to length. Takes an optional radix argument which specifies the base to use for conversion.</description>
+                        <params>
+                            <param name="length" type="length" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Number -->
+                    <!-- Object -->
+                    <function name="clone" returns="Object">
+                        <description>Clones the passed object using shallow copy (copies all the original’s properties to the result).</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="extend" returns="alteredDest">
+                        <description>Copies all properties from the source to the destination object. Used by Prototype to simulate inheritance (rather statically) by copying to prototypes.</description>
+                        <params>
+                            <param name="dest" type="dest" optional="False"/>
+                            <param name="src" type="src" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inspect" returns="String">
+                        <description>Returns the debug-oriented string representation of the object.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isArray" returns="Boolean">
+                        <description>Returns true if obj is an array, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isElement" returns="Boolean">
+                        <description>Returns true if obj is a DOM node of type 1, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isFunction" returns="Boolean">
+                        <description>Returns true if obj is of type function, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isHash" returns="Boolean">
+                        <description>Returns true if obj is an instance of the Hash class, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isNumber" returns="Boolean">
+                        <description>Returns true if obj is of type number, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isString" returns="Boolean">
+                        <description>Returns true if obj is of type string, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isUndefined" returns="Boolean">
+                        <description>Returns true if obj is of type undefined, false otherwise.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="keys" returns="String">
+                        <description>Treats any object as a Hash and fetches the list of its property names.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toHTML" returns="String">
+                        <description>Returns the return value of obj’s toHTML method if it exists, else runs obj through String.interpret.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Returns a JSON string.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toQueryString" returns="String">
+                        <description>Turns an object into its URL-encoded query string representation.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="values" returns="Array">
+                        <description>Treats any object as a Hash and fetches the list of its property values.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="include" returns="Boolean">
+                        <description>Determines whether the value is included in the range.</description>
+                        <params>
+                            <param name="obj" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stop" returns="String">
+                        <description>Stops the periodical executer (there will be no further triggers).</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- Object -->
+                    <!-- prototype -->
+                    <function name="K" returns="Argument">
+                        <description>K is Prototype’s very own identity function, i.e. it returns its argument untouched.</description>
+                        <params>
+                            <param name="argument" type="argument" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="emptyFunction" returns="void">
+                        <description>The emptyFunction does nothing… and returns nothing!</description>
+                        <params>
+                            <param name="argument" type="argument" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- prototype -->
+                    <!-- string -->
+                    <function name="blank" returns="Boolean">
+                        <description>Check if the string is 'blank', meaning either empty or containing only whitespace.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="camelize" returns="String">
+                        <description>Converts a string separated by dashes into a camelCase equivalent. For instance, 'foo-bar' would be converted to 'fooBar'.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="capitalize" returns="String">
+                        <description>Capitalizes the first letter of a string and downcases all the others.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="dasherize" returns="String">
+                        <description>Replaces every instance of the underscore character ("_") by a dash ("-").</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="empty" returns="Boolean">
+                        <description>Checks if the string is empty.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="endsWith" returns="Boolean">
+                        <description>Checks if the string ends with substring.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="escapeHTML" returns="String">
+                        <description>Converts HTML special characters to their entity equivalents. </description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="evalJSON" returns="Object">
+                        <description>Evaluates the JSON in the string and returns the resulting object. If the optional sanitize parameter is set to true, the string is checked for possible malicious attempts and eval is not called if one is detected.</description>
+                        <params>
+                            <param name="[sanitize = false]" type="[sanitize = false]" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="evalScripts" returns="Value">
+                        <description>Evaluates the content of any script block present in the string. Returns an array containing the value returned by each script.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="extractScripts" returns="Script">
+                        <description>Exctracts the content of any script block present in the string and returns them as an array of strings.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="gsub" returns="String">
+                        <description>Returns the string with every occurence of a given pattern replaced by either a regular string, the returned value of a function or a Template string. The pattern can be a string or a regular expression.</description>
+                        <params>
+                            <param name="pattern" type="pattern" optional="False"/>
+                            <param name="replacement" type="replacement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="include" returns="Boolean">
+                        <description>Check if the string contains a substring.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="inspect" returns="String">
+                        <description>Returns a debug-oriented version of the string (i.e. wrapped in single or double quotes, with backslashes and quotes escaped).</description>
+                        <params>
+                            <param name="[useDoubleQuotes = false]" type="[useDoubleQuotes = false]" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="interpolate" returns="String">
+                        <description>Treats the string as a Template and fills it with object’s properties.</description>
+                        <params>
+                            <param name="object" type="object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="isJSON" returns="Boolean">
+                        <description>Check if the string is valid JSON by the use of regular expressions. This security method is called internally.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="parseQuery" returns="String">
+                        <description>
+                        </description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="scan" returns="String">
+                        <description>Allows iterating over every occurrence of the given pattern (which can be a string or a regular expression). Returns the original string.</description>
+                        <params>
+                            <param name="pattern" type="pattern" optional="False"/>
+                            <param name="iterator" type="iterator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="startsWith" returns="Boolean">
+                        <description>Checks if the string starts with substring.</description>
+                        <params>
+                            <param name="substring" type="substring" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="strip" returns="String">
+                        <description>Strips all leading and trailing whitespace from a string.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stripScripts" returns="String">
+                        <description>Strips a string of anything that looks like an HTML script block.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stripTags" returns="String">
+                        <description>Strips a string of any HTML tag.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="sub" returns="String">
+                        <description>Returns a string with the first count occurrences of pattern replaced by either a regular string, the returned value of a function or a Template string. pattern can be a string or a regular expression.</description>
+                        <params>
+                            <param name="pattern" type="void" optional="False"/>
+                            <param name="replacement" type="replacement" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="succ" returns="String">
+                        <description>Used internally by ObjectRange. Converts the last character of the string to the following character in the Unicode alphabet.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="times" returns="String">
+                        <description>Concatenates the string count times.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toArray" returns="character">
+                        <description>Splits the string character-by-character and returns an array with the result.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toJSON" returns="String">
+                        <description>Returns a JSON string.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="toQueryParams" returns="Object">
+                        <description>Parses a URI-like query string and returns an object composed of parameter/value pairs.</description>
+                        <params>
+                            <param name="separator" type="separator" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="truncate" returns="String">
+                        <description>Truncates a string to the given length and appends a suffix to it (indicating that it is only an excerpt).</description>
+                        <params>
+                            <param name="length" type="value" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="underscore" returns="String">
+                        <description>Converts a camelized string into a series of words separated by an underscore ("_").</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="unescapeHTML" returns="String">
+                        <description>Strips tags and converts the entity forms of special HTML characters to their normal form.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="unfilterJSON" returns="String">
+                        <description>Strips comment delimiters around Ajax JSON or JavaScript responses. This security method is called internally.</description>
+                        <params>
+                            <param name="filter" type="filter" optional="False"/>
+                        </params>
+                    </function>
+                    <!-- string -->
+                    <function name="evaluate" returns="String">
+                        <description>Applies the template to the given object’s data, producing a formatted string with symbols replaced by corresponding object’s properties.</description>
+                        <params>
+                            <param name="object" type="Object" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="Observer" returns="String">
+                        <description>A timed observer for a specific form control.</description>
+                        <params>
+                            <param name="element" type="element" optional="False"/>
+                            <param name="frequency" type="frequency" optional="False"/>
+                            <param name="callback" type="callback" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="fire" returns="Event">
+                        <description>Fires a custom event with document as the target.</description>
+                        <params>
+                            <param name="eventName" type="eventName" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="observe" returns="Document">
+                        <description>Listens for the given event over the entire document. Can also be used for listening to "dom:loaded" event.</description>
+                        <params>
+                            <param name="eventName" type="eventName" optional="False"/>
+                            <param name="handler" type="handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="stopObserving" returns="Document">
+                        <description>Unregisters an event handler from the document.</description>
+                        <params>
+                            <param name="eventName" type="eventName" optional="False"/>
+                            <param name="handler" type="handler" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getDimensions" returns="Number">
+                        <description>Returns the size of the viewport.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getHeight" returns="Number">
+                        <description>Returns the height of the viewport.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getScrollOffsets" returns="Number">
+                        <description>Returns the viewport’s horizontal and vertical scroll offsets.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                    <function name="getWidth" returns="Number">
+                        <description>Returns the width of the viewport.</description>
+                        <params>
+                            <param name="void" type="void" optional="False"/>
+                        </params>
+                    </function>
+                </functions>
+            </global>
+        </module>
+        <module name="Ajax" disabled="False">
+            <interfaces>
+                <interface name="Ajax" extends="Prototype">
+                    <attributes>
+                    </attributes>
+                    <functions>
+                        <function name="PeriodicalUpdater" returns="void">
+                            <description>Periodically performs an AJAX request and updates a container’s contents based on the response text. Offers a mechanism for “decay,” which lets it trigger at widening intervals while the response is unchanged.</description>
+                            <params>
+                                <param name="container" type="container" optional="False"/>
+                                <param name="url" type="String" optional="False"/>
+                            </params>
+                        </function>
+                        <function name="Request" returns="void">
+                            <description>Initiates and processes an AJAX request.</description>
+                            <params>
+                                <param name="url" type="url" optional="False"/>
+                            </params>
+                        </function>
+                        <function name="Updater" returns="void">
+                            <description>Performs an AJAX request and updates a container’s contents based on the response text.</description>
+                            <params>
+                                <param name="container" type="container" optional="False"/>
+                                <param name="url" type="String" optional="False"/>
+                            </params>
+                        </function>
+                      <function name="register" returns="void">
+                            <description>Initiates and processes an AJAX request.</description>
+                            <params>
+                                <param name="responder" type="responder" optional="False"/>
+                            </params>
+                        </function>
+                        <function name="unregister" returns="void">
+                            <description>Initiates and processes an AJAX request.</description>
+                            <params>
+                                <param name="responder" type="responder" optional="False"/>
+                            </params>
+                        </function>                        
+                    </functions>
+                </interface>
+            </interfaces>
+        </module>
+
+    </modules>
+</javascript>

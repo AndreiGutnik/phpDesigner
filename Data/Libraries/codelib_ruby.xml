@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- PHP DESIGNER 2007. RUBY Code Library. Copyright (c) MPSOFTWARE.  All rights reserved. -->
+<codelib value="Ruby">
+    <item value="Ruby" imageindex="3" stateindex="-1" selectedindex="3">
+        <item value="Reserved Words" imageindex="4" stateindex="-1" selectedindex="4">
+            <item value="alias" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="attr" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="begin" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="break" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="case" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="class" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="def" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="do" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="else" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="elsif" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="end" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="ensure" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="exit" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="extend" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="false" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="for" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="gets" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="if" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="in" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="include" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="load	" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="loop" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="module" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="next" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="nil" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="not" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="print" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="private" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="public" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="puts" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="raise" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="redo" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="require" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="rescue" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="retry" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="return" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="self" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="then" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="true" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="unless" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="when" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="while" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="yield" imageindex="0" stateindex="-1" selectedindex="0"/>
+        </item>
+    </item>
+</codelib>

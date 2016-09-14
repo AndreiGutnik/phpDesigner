@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<htmlAttributeValues>
+    <attribs>
+        <attrib name="target">
+            <value>_blank</value>
+            <value>_parent</value>
+            <value>_self</value>
+            <value>_top</value>
+        </attrib>
+        <attrib name="dir">
+            <value>ltr</value>
+            <value>rtl</value>
+        </attrib>
+        <attrib name="align" tags="img">
+            <!-- img -->
+            <value>top</value>
+            <value>middle</value>
+            <value>bottom</value>
+            <value>left</value>
+            <value>right</value>
+        </attrib>
+        <attrib name="align">
+            <!-- img: "bottom|middle|top|left|right -->
+            <value>left</value>
+            <value>center</value>
+            <value>right</value>
+            <value>justify</value>
+        </attrib>
+        <attrib name="scrolling">
+            <value>yes</value>
+            <value>no</value>
+            <value>auto</value>
+        </attrib>
+        <attrib name="scrolling">
+            <value>yes</value>
+            <value>no</value>
+            <value>auto</value>
+        </attrib>
+        <attrib name="type" tags="input">
+            <value>text</value>
+            <value>password</value>
+            <value>checkbox</value>
+            <value>radio</value>
+            <value>submit</value>
+            <value>reset</value>
+            <value>file</value>
+            <value>hidden</value>
+            <value>image</value>
+            <value>button</value>
+        </attrib>
+        <attrib name="rel">
+            <value>stylesheet</value>
+            <value>alternate</value>
+            <value>appendix</value>
+            <value>bookmark</value>
+            <value>chapter</value>
+            <value>contents</value>
+            <value>copyright</value>
+            <value>glossary</value>
+            <value>help</value>
+            <value>index</value>
+            <value>next</value>
+            <value>prev</value>
+            <value>section</value>
+            <value>start</value>
+            <value>subsection</value>
+            <value>external</value>
+	    <value>canonical</value>
+	    <value>nofollow</value>          
+        </attrib>
+        <attrib name="rev">
+            <value>stylesheet</value>
+            <value>alternate</value>
+            <value>appendix</value>
+            <value>bookmark</value>
+            <value>chapter</value>
+            <value>contents</value>
+            <value>copyright</value>
+            <value>glossary</value>
+            <value>help</value>
+            <value>index</value>
+            <value>next</value>
+            <value>prev</value>
+            <value>section</value>
+            <value>start</value>
+            <value>subsection</value>            
+        </attrib>        
+        <attrib name="media">
+            <value>screen</value>
+            <value>tty</value>
+            <value>tv</value>
+            <value>projection</value>
+            <value>handheld</value>
+            <value>print</value>
+            <value>braille</value>
+            <value>aural</value>
+            <value>all</value>
+        </attrib>
+        <attrib name="name" tags="meta">
+            <value>author</value>
+            <value>description</value>
+            <value>keywords</value>
+            <value>revised</value>
+            <value>generator</value>
+        </attrib>
+
+        <attrib name="type" tags="ol">
+            <value>1</value>
+            <value>a</value>
+            <value>A</value>
+            <value>i</value>
+            <value>I</value>
+        </attrib>
+
+        <attrib name="type" tags="li">
+            <value>author</value>
+            <value>circle</value>
+            <value>square</value>
+            <value>revised</value>
+            <value>generator</value>
+        </attrib>
+
+        <attrib name="type" tags="ul">
+            <value>circle</value>
+            <value>disc</value>
+            <value>square</value>
+        </attrib>
+        
+        <attrib name="language" tags="script">
+            <value>php</value>                                                
+            <value>javascript</value>
+            <value>js</value>
+            <value>jscript</value>
+            <value>vb</value>
+            <value>vbscript</value>
+            <value>xml</value>
+        </attrib>        
+        
+        
+		<attrib name="type" tags="script">
+		  <value>text/javascript</value>
+		  <value>text/php</value>
+		  <value>text/vbscript</value>
+		  <value>text/xml</value>
+		</attrib>        
+
+
+		<attrib name="type" tags="style">
+		  <value>text/css</value>
+		</attrib>        
+
+		<attrib name="content" tags="meta">
+		  <value>text/html</value>
+		  <value>text</value>
+		</attrib>
+
+		<attrib name="http-equiv" tags="meta">
+		  <value>content-type</value>
+		  <value>content-style-type</value>
+		  <value>expires</value>
+		  <value>refresh</value>
+		  <value>set-cookie</value>
+		</attrib>
+
+		<attrib name="name" tags="meta">
+		  <value>author</value>
+		  <value>description</value>
+		  <value>keywords</value>
+		  <value>generator</value>
+		  <value>revised</value>
+		</attrib>
+
+
+
+        <attrib name="bgcolor,color,alink,vlink">
+			<value>color/dialog~Pick Color...</value>
+			<value>black</value>
+			<value>silver</value>
+			<value>gray</value>
+			<value>white</value>
+			<value>maroon</value>
+			<value>red</value>
+			<value>purple</value>
+			<value>fuchsia</value>
+			<value>green</value>
+			<value>lime</value>
+			<value>olive</value>
+			<value>yellow</value>
+			<value>navy</value>
+			<value>blue</value>
+			<value>teal</value>
+			<value>aqu</value>
+        </attrib>
+               
+        <attrib name="background">
+			<value>url/dialog~Pick URL...</value>
+        </attrib>
+
+                     
+    </attribs>
+</htmlAttributeValues>
+

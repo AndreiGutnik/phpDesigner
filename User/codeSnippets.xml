@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<codeTemplates><childs><node name="all" isFolder="True" hlType=""><data></data><childs><node name="div" isFolder="False" hlType="HTML"><data>&lt;div id="[[cursor]]"&gt;
+
+&lt;/div&gt;</data><childs/></node></childs></node></childs></codeTemplates>

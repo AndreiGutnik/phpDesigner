@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- PHP DESIGNER 2007. PHPDOCUMENTOR Code Library. Copyright (c) MPSOFTWARE.  All rights reserved. -->
+<codelib target="phpDocumentor">
+    <item value="phpDocumentor" imageindex="3" stateindex="-1" selectedindex="3">
+        <item value="Tags" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="@abstract" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@access" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@author" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@category" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@copyright" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@deprecated" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@example" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@final" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@filesource" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@global" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@ignore" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@internal" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@license" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@link" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@name" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@package" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@param" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@return" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@see" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@since" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@static" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@staticvar" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@subpackage" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@todo" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@tutorial" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@uses" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@var" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="@version" imageindex="0" stateindex="-1" selectedindex="0"/>								            
+        </item>
+        <item value="Inline Tags" imageindex="2" stateindex="-1" selectedindex="2">
+            <item value="{@id}" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@internal}" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@inheritdoc}" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@link}" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@source} " imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@toc}" imageindex="0" stateindex="-1" selectedindex="0"/>
+            <item value="{@tutorial}" imageindex="0" stateindex="-1" selectedindex="0"/>	
+        </item>
+    </item>
+</codelib>

@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright MPSOFTWARE -->
+<javascript>
+    <module name="Dojo 1.7.3" disabled="False">
+        <interfaces>
+            <interface name="dojo" extends="">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="baseUrl"/>
+                    <attribute readonly="True" type="Properties" name="boxModel"/>
+                    <attribute readonly="True" type="Properties" name="isAIR"/>
+                    <attribute readonly="True" type="Properties" name="isBrowser"/>
+                    <attribute readonly="True" type="Properties" name="all"/>
+                    <attribute readonly="True" type="Properties" name="isChrome"/>
+                    <attribute readonly="True" type="Properties" name="isFF"/>
+                    <attribute readonly="True" type="Properties" name="isIE"/>
+                    <attribute readonly="True" type="Properties" name="isKhtml"/>
+                    <attribute readonly="True" type="Properties" name="isMoz"/>
+                    <attribute readonly="True" type="Properties" name="isMozilla"/>
+                    <attribute readonly="True" type="Properties" name="isOpera"/>
+                    <attribute readonly="True" type="Properties" name="isQuirks"/>
+                    <attribute readonly="True" type="Properties" name="isRhino"/>
+                    <attribute readonly="True" type="Properties" name="isSafari"/>
+                    <attribute readonly="True" type="Properties" name="isSpidermonkey"/>
+                    <attribute readonly="True" type="Properties" name="isWebKit"/>
+                    <attribute readonly="True" type="Properties" name="jaxer"/>
+                    <attribute readonly="True" type="Properties" name="locale"/>
+                    <attribute readonly="True" type="Properties" name="NodeList-fx"/>
+                    <attribute readonly="True" type="Properties" name="NodeList-html"/>
+                    <attribute readonly="True" type="Properties" name="nonDebugProvide"/>
+                    <attribute readonly="True" type="Properties" name="parser"/>
+                    <attribute readonly="True" type="Properties" name="publish"/>
+                    <attribute readonly="True" type="Properties" name="requireAfterIf"/>
+                    <attribute readonly="True" type="Properties" name="robot"/>
+                    <attribute readonly="True" type="Properties" name="robotx"/>
+                    <attribute readonly="True" type="Properties" name="subscribe"/>
+                    <attribute readonly="True" type="Properties" name="tests"/>
+                    <attribute readonly="True" type="Properties" name="toJsonIndentStr"/>
+                    <attribute readonly="True" type="Properties" name="unsubscribe"/>
+                    <attribute readonly="True" type="Properties" name="back.getHash"/>
+                    <attribute readonly="True" type="Properties" name="back.goBack"/>
+                    <attribute readonly="True" type="Properties" name="back.goForward"/>
+                    <attribute readonly="True" type="Properties" name="back.setHash"/>
+                    <attribute readonly="True" type="Properties" name="back"/>
+                    <attribute readonly="True" type="Properties" name="cldr"/>
+                    <attribute readonly="True" type="Properties" name="colors"/>
+                    <attribute readonly="True" type="Properties" name="config"/>
+                    <attribute readonly="True" type="Properties" name="currency"/>
+                    <attribute readonly="True" type="Properties" name="data"/>
+                    <attribute readonly="True" type="Properties" name="date"/>
+                    <attribute readonly="True" type="Properties" name="dnd"/>
+                    <attribute readonly="True" type="Properties" name="doc"/>
+                    <attribute readonly="True" type="Properties" name="fx"/>
+                    <attribute readonly="True" type="Properties" name="gears"/>
+                    <attribute readonly="True" type="Properties" name="global"/>
+                    <attribute readonly="True" type="Properties" name="html"/>
+                    <attribute readonly="True" type="Properties" name="i18n"/>
+                    <attribute readonly="True" type="Properties" name="io"/>
+                    <attribute readonly="True" type="Properties" name="keys"/>
+                    <attribute readonly="True" type="Properties" name="number"/>
+                    <attribute readonly="True" type="Properties" name="regexp"/>
+                    <attribute readonly="True" type="Properties" name="rpc"/>
+                    <attribute readonly="True" type="Properties" name="string"/>
+                    <attribute readonly="True" type="Properties" name="version"/>
+                </attributes>
+                <functions>
+                    <function returns="dojo" name="addClass">
+                        <description>Adds the specified classes to the end of the class list on the passed node. Will not re-apply duplicate classes, except in edge cases when adding multiple classes at once.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="classStr"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="addOnLoad">
+                        <description>Registers a function to be triggered after the DOM has finished loading and widgets declared in markup have been instantiated. Images and CSS files may or may not have finished downloading when the specified function is called. (Note that widgets' CSS and HTML code is guaranteed to be downloaded before said widgets are instantiated.)</description>
+                        <params>
+                            <param optional="False" type="Object" name="obj"/>
+                            <param optional="False" type="DOMString" name="functionName"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="addOnUnload">
+                        <description>registers a function to be triggered when the page unloads.</description>
+                        <params>
+                            <param optional="False" type="Object" name="obj"/>
+                            <param optional="False" type="DOMString" name="functionName"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="addOnWindowUnload">
+                        <description>registers a function to be triggered when window.onunload fires. Be careful trying to modify the DOM or access JavaScript properties during this phase of page unloading: they may not always be available. Consider dojo.addOnUnload() if you need to modify the DOM or do heavy JavaScript work.</description>
+                        <params>
+                            <param optional="False" type="Object" name="obj"/>
+                            <param optional="False" type="DOMString" name="functionName"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="anim">
+                        <description>A simpler interface to dojo.animateProperty(), also returns an instance of dojo._Animation but begins the animation immediately, unlike nearly every other Dojo animation API.</description>
+                        <params>
+                            <param optional="False" type="DOMNode" name="node"/>
+                            <param optional="False" type="Object" name="properties"/>
+                            <param optional="False" type="Integer" name="duration"/>
+                            <param optional="False" type="Function" name="easing"/>
+                            <param optional="False" type="Function" name="onEnd"/>
+                            <param optional="False" type="Integer" name="delay"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="attr">
+                        <description>Gets or sets an attribute on an HTML element.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="name"/>
+                            <param optional="False" type="DOMString" name="value"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="blendColors">
+                        <description>Blend colors end and start with weight from 0 to 1, 0.5 being a 50/50 blend, can reuse a previously allocated dojo.Color object for the result</description>
+                        <params>
+                            <param optional="False" type="dojo.Color" name="start"/>
+                            <param optional="False" type="dojo.Color" name="end"/>
+                            <param optional="False" type="Number" name="weight"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="body">
+                        <description>Return the body element of the document return the body object associated with dojo.doc</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="byId">
+                        <description>Returns DOM node with matching id attribute or null if not found, similar to "$" function in another library. If id is a DomNode, this function is a no-op.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="doc"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="byId">
+                        <description>Returns DOM node with matching id attribute or null if not found, similar to "$" function in another library. If id is a DomNode, this function is a no-op.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="doc"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="byId">
+                        <description>Returns DOM node with matching id attribute or null if not found, similar to "$" function in another library. If id is a DomNode, this function is a no-op.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="doc"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="byId">
+                        <description>Returns DOM node with matching id attribute or null if not found, similar to "$" function in another library. If id is a DomNode, this function is a no-op.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="doc"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="byId">
+                        <description>Returns DOM node with matching id attribute or null if not found, similar to "$" function in another library. If id is a DomNode, this function is a no-op.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="doc"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="clone">
+                        <description>Clones objects (including DOM nodes) and all children. Warning: do not clone cyclic structures.</description>
+                        <params>
+                            <param optional="False" type="Anything" name="o"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="colorFromArray">
+                        <description>Builds a color from 1, 2, 3, or 4 element array</description>
+                        <params>
+                            <param optional="False" type="Array" name="a"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="colorFromHex">
+                        <description>Converts a hex string with a '#' prefix to a color object. Supports 12-bit #rgb shorthand.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="color"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="colorFromRgb">
+                        <description>Get rgb(a) array from css-style color declarations</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="color"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="colorFromString">
+                        <description>Parses str for a color value.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="color"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="connect">
+                        <description>Create a link that calls one function when another executes.</description>
+                        <params>
+                            <param optional="False" type="Object" name="obj"/>
+                            <param optional="False" type="DOMString" name="event"/>
+                            <param optional="False" type="Object" name="context"/>
+                            <param optional="False" type="DOMString" name="method"/>
+                            <param optional="False" type="Boolean" name="dontFix"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="connectPublisher">
+                        <description>Ensure that everytime obj.event() is called, a message is published on the topic. Returns a handle which can be passed to dojo.disconnect() to disable subsequent automatic publication on the topic.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="topic"/>
+                            <param optional="False" type="dojo.Color" name="obj"/>
+                            <param optional="False" type="DOMString" name="event"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="contentBox">
+                        <description>Getter/setter for the content-box of node.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="Object" name="box"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="coords">
+                        <description>Returns an object that measures margin box width/height and absolute positioning data from dojo._abs().</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="Boolean" name="includeScroll"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="create">
+                        <description>Create an element, allowing for optional attribute decoration and placement.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="tag"/>
+                            <param optional="False" type="Object" name="attrs"/>
+                            <param optional="False" type="DOMString" name="refNode"/>
+                            <param optional="False" type="DOMString" name="pos"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="delegate">
+                        <description>Returns a new object which "looks" to obj for properties which it does not have a value for. Optionally takes a bag of properties to seed the returned object with initially.</description>
+                        <params>
+                            <param optional="False" type="The" name="obj"/>
+                            <param optional="False" type="An" name="props"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="deprecated">
+                        <description>Log a debug message to indicate that a behavior has been deprecated.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="function "/>
+                            <param optional="False" type="DOMString" name="extra"/>
+                            <param optional="False" type="DOMString" name="removal"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="destroy">
+                        <description>Removes a node from its parent, clobbering it and all of its children.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="disconnect">
+                        <description>Remove a link created by dojo.connect.</description>
+                        <params>
+                            <param optional="False" type="Handle" name="handle"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="empty">
+                        <description>safely removes all children of the node.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="eval">
+                        <description>Perform an evaluation in the global scope. Use this rather than calling 'eval()' directly.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="scriptFragment"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="every">
+                        <description>Determines whether or not every item in arr satisfies the condition implemented by callback.</description>
+                        <params>
+                            <param optional="False" type="Array" name="arr"/>
+                            <param optional="False" type="DOMString" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="exit">
+                        <params>
+                            <param optional="False" type="DOMString" name="exitcode"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="exists">
+                        <description>Determine if an object supports a given method</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="string"/>
+                            <param optional="False" type="Object" name="obj"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="experimental">
+                        <description>Marks code as experimental.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="moduleName"/>
+                            <param optional="False" type="DOMString" name="extra"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="extends">
+                        <description>Adds all properties and methods of props to constructor's prototype, making them available to all instances created with constructor.</description>
+                        <params>
+                            <param optional="False" type="Object" name="constructor"/>
+                            <param optional="False" type="Object" name="props"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="fadeIn">
+                        <description>Returns an animation that will fade node defined in 'args' from its current opacity to fully opaque.</description>
+                        <params>
+                            <param optional="False" type="dojo.__FadeArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="fadeOut">
+                        <description>Returns an animation that will fade node defined in 'args' from its current opacity to fully transparent.</description>
+                        <params>
+                            <param optional="False" type="dojo.__FadeArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="array" name="filter">
+                        <description>Returns a new Array with those items from arr that match the condition implemented by callback.</description>
+                        <params>
+                            <param optional="False" type="Array" name="arr"/>
+                            <param optional="False" type="DOMString" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="fixEvent">
+                        <description>Normalizes properties on the event object including event bubbling methods, keystroke normalization, and x/y positions</description>
+                        <params>
+                            <param optional="False" type="Event" name="evt"/>
+                            <param optional="False" type="DOMNode" name="sender"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="forEach">
+                        <description>For every item in arr, callback is invoked. Return values are ignored.</description>
+                        <params>
+                            <param optional="False" type="Array" name="arr"/>
+                            <param optional="False" type="DOMString" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="string" name="formToJson">
+                        <description>Return a serialized JSON string from a form node or string ID identifying the form to serialize</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="formNode"/>
+                            <param optional="False" type="Boolean" name="prettyPrint"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="formToQuery">
+                        <description>dojo.formToObject returns the values encoded in an HTML form as string properties in an object which it then returns. Disabled form elements, buttons, and other non-value form elements are skipped. Multi-select elements are returned as an array of string values.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="formNode"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="formToObject">
+                        <description>dojo.formToObject returns the values encoded in an HTML form as string properties in an object which it then returns. Disabled form elements, buttons, and other non-value form elements are skipped. Multi-select elements are returned as an array of string values.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="formNode"/>
+                        </params>
+                    </function>
+                    <function returns="string" name="fromJson">
+                        <description>Parses a [JSON](http://json.org) string to return a JavaScript object. Throws for invalid JSON strings.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="json"/>
+                        </params>
+                    </function>
+                    <function returns="CSS2Properties" name="getComputedStyle">
+                        <description>Returns a "computed style" object.</description>
+                        <params>
+                            <param optional="False" type="DOMNode" name="node"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="getObject">
+                        <description>Get a property from a dot-separated string, such as "A.B.C"</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="name"/>
+                            <param optional="False" type="Boolean" name="create"/>
+                            <param optional="False" type="Object" name="context"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="hasAttr">
+                        <description>Returns true if the requested attribute is specified on the given element, and false otherwise.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="name"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="hasClass">
+                        <description>Returns whether or not the specified classes are a portion of the class list currently applied to the node.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="classStr"/>
+                        </params>
+                    </function>
+                    <function returns="function" name="hitch">
+                        <description>Returns a function that will only ever execute in the a given scope. This allows for easy use of object member functions in callbacks and other places in which the "this" keyword may otherwise not reference the expected scope. Any number of default positional arguments may be passed as parameters beyond "method". Each of these values will be used to "placehold" (similar to curry) for the hitched function.</description>
+                        <params>
+                            <param optional="False" type="Object" name="scope"/>
+                            <param optional="False" type="Function" name="method"/>
+                        </params>
+                    </function>
+                    <function returns="number" name="indexOf">
+                        <description>Locates the first index of the provided value in the passed array. If the value is not found, -1 is returned.</description>
+                        <params>
+                            <param optional="False" type="Array" name="array"/>
+                            <param optional="False" type="Object" name="value"/>
+                            <param optional="False" type="Integer" name="fromIndex"/>
+                            <param optional="False" type="Boolean" name="findLast"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isAlien">
+                        <description>Returns true if it is a built-in function or some other kind of oddball that *should* report as a function but doesn't</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isArray">
+                        <description>Return true if it is an Array</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isArrayLike">
+                        <description>Similar to dojo.isArray() but more permissive</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isDescendant">
+                        <description>Returns true if node is a descendant of ancestor</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="ancestor"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isFunction">
+                        <description>Return true if it is a Function</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isObject">
+                        <description>Returns true if it is a JavaScript object (or an Array, a Function or null)</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isString">
+                        <description>Return true if it is a String</description>
+                        <params>
+                            <param optional="False" type="Anything" name="it"/>
+                        </params>
+                    </function>
+                    <function returns="number" name="lastIndexOf">
+                        <description>Locates the last index of the provided value in the passed array. If the value is not found, -1 is returned.</description>
+                        <params>
+                            <param optional="False" type="Array" name="array"/>
+                            <param optional="False" type="Object" name="value"/>
+                            <param optional="False" type="Integer" name="fromIndex"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="loadInit">
+                        <description>Executes a function that needs to be executed for the loader's dojo.requireIf resolutions to work. This is needed mostly for the xdomain loader case where a function needs to be executed to set up the possible values for a dojo.requireIf call.</description>
+                        <params>
+                            <param optional="False" type="Function" name="init"/>
+                        </params>
+                    </function>
+                    <function returns="array" name="map">
+                        <description>applies callback to each element of arr and returns an Array with the results</description>
+                        <params>
+                            <param optional="False" type="Array" name="array"/>
+                            <param optional="False" type="DOMString" name="callback"/>
+                            <param optional="False" type="Function" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="marginBox">
+                        <description>Getter/setter for the margin-box of node.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="Object" name="box"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="mixin">
+                        <description>Adds all properties and methods of props to obj and returns the (now modified) obj.</description>
+                        <params>
+                            <param optional="False" type="Object" name="obj"/>
+                            <param optional="False" type="Object" name="props"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="moduleUrl">
+                        <description>Returns a dojo._Url object relative to a module.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="module"/>
+                            <param optional="False" type="DOMString" name="url"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="objectToQuery">
+                        <description>takes a name/value mapping object and returns a string representing a URL-encoded version of that object.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="map"/>
+                        </params>
+                    </function>
+                    <function returns="function" name="partial">
+                        <description>similar to hitch() except that the scope object is left to be whatever the execution context eventually becomes.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="method"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="place">
+                        <description>Attempt to insert node into the DOM, choosing from various positioning options. Returns true if successful, false otherwise.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="XXXXX"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="platformRequire">
+                        <description>Require one or more modules based on which host environment Dojo is currently operating in</description>
+                        <params>
+                            <param optional="False" type="Object" name="modMap"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="popContext">
+                        <description>If the context stack contains elements, ensure that subsequent code executes in the *previous* context to the current context. The current context set ([global, document]) is returned.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="provide">
+                        <description>Each javascript source file must have at least one dojo.provide() call at the top of the file, corresponding to the file name. For example, js/dojo/foo.js must have dojo.provide("dojo.foo"); before any calls to dojo.require() are made.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="resourceName"/>
+                        </params>
+                    </function>
+                    <function returns="Array" name="pushContext">
+                        <description>causes subsequent calls to Dojo methods to assume the passed object and, optionally, document as the default scopes to use. A 2-element array of the previous global and document are returned.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="g"/>
+                            <param optional="False" type="MDocumentElement" name="d"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="query">
+                        <description>Returns nodes which match the given CSS3 selector, searching the entire document by default but optionally taking a node to scope the search by. Returns an instance of dojo.NodeList.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="query"/>
+                            <param optional="False" type="DOMString" name="root"/>
+                            <param optional="False" type="Function" name="listCtor"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="queryToObject">
+                        <description>returns an object representing a de-serialized query section of a URL. Query keys with multiple values are returned in an array.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="str"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="rawXhrPost">
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="rawXhrPut">
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="registerModulePath">
+                        <description>maps a module name to a path</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="module"/>
+                            <param optional="False" type="DOMString" name="prefix"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="removeAttr">
+                        <description>Removes an attribute from an HTML element.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="name"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="removeClass">
+                        <description>Removes the specified classes from node. No dojo.hasClass check is required.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="classStr"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="requireIf">
+                        <description>If the condition is true then call dojo.require() for the specified resource</description>
+                        <params>
+                            <param optional="False" type="Boolean" name="condition"/>
+                            <param optional="False" type="DOMString" name="resourceName"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="requireLocalization">
+                        <description>Loads a bundle intelligently based on whether the module is local or xd. Overrides the local-case implementation.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="moduleName"/>
+                            <param optional="False" type="DOMString" name="bundleName"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                            <param optional="False" type="DOMString" name="availableFlatLocales"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="setObject">
+                        <description>Set a property from a dot-separated string, such as "A.B.C"</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="name"/>
+                            <param optional="False" type="Object" name="value"/>
+                            <param optional="False" type="Object" name="context"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="setSelectable">
+                        <description>Enable or disable selection on a node</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="Boolean" name="selectable"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="some">
+                        <description>Determines whether or not any item in arr satisfies the condition implemented by callback.</description>
+                        <params>
+                            <param optional="False" type="Array" name="arr"/>
+                            <param optional="False" type="Function" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="stopEvent">
+                        <description>Prevents propagation and clobbers the default action of the passed event</description>
+                        <params>
+                            <param optional="False" type="Event" name="evt"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="style">
+                        <description>Accesses styles on a node. If 2 arguments are passed, acts as a getter. If 3 arguments are passed, acts as a setter.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="style"/>
+                            <param optional="False" type="DOMString" name="value"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="toggleClass">
+                        <description>Adds a class to node if not present, or removes if present. Pass a boolean condition if you want to explicitly add or remove.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="DOMString" name="classStr"/>
+                            <param optional="False" type="Boolean" name="condition"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="toJson">
+                        <description>Returns a [JSON](http://json.org) serialization of an object.</description>
+                        <params>
+                            <param optional="False" type="Object" name="it"/>
+                            <param optional="False" type="Boolean" name="prettyPrint"/>
+                            <param optional="False" type="DOMString" name="_indentStr"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="trim">
+                        <description>Trims whitespace from both sides of the string</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="str"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="unloaded">
+                        <description>signal fired by impending environment destruction. You should use dojo.addOnUnload() instead of doing a direct dojo.connect() to this method to perform page/application cleanup methods. See dojo.addOnUnload for more info.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="withDoc">
+                        <description>Invoke callback with documentObject as dojo.doc.</description>
+                        <params>
+                            <param optional="False" type="DocumentElement" name="documentObject"/>
+                            <param optional="False" type="Function" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                            <param optional="False" type="Array" name="cbArguments"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="withGlobal">
+                        <description>Invoke callback with globalObject as dojo.global and globalObject.document as dojo.doc.</description>
+                        <params>
+                            <param optional="False" type="DocumentElement" name="globalObject"/>
+                            <param optional="False" type="Function" name="callback"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                            <param optional="False" type="Array" name="cbArguments"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xdRequireLocalization">
+                        <description>Internal xd loader function. The xd version of dojo.requireLocalization.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="m"/>
+                            <param optional="False" type="DOMString" name="b"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                            <param optional="False" type="DOMString" name="fLocales"/>
+                            <param optional="False" type="DOMString" name="moduleName"/>
+                            <param optional="False" type="DOMString" name="bundleName"/>
+                            <param optional="False" type="DOMString" name="availableFlatLocales"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="XXXXXXXX">
+                        <description>XXXXXXX</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="XXXXX"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xhr">
+                        <description>Sends an HTTP request with the given method.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="method"/>
+                            <param optional="False" type="dojo.__XhrArgs" name="args"/>
+                            <param optional="False" type="Boolean" name="hasBody"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xhrDelete">
+                        <description>Sends an HTTP DELETE request to the server.</description>
+                        <params>
+                            <param optional="False" type="dojo.__XhrArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xhrGet">
+                        <description>Sends an HTTP GET request to the server.</description>
+                        <params>
+                            <param optional="False" type="dojo.__XhrArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xhrPost">
+                        <description>Sends an HTTP POST request to the server. In addtion to the properties listed for the dojo.__XhrArgs type, the following property is allowed: postData: String. Send raw data in the body of the POST request.</description>
+                        <params>
+                            <param optional="False" type="dojo.__XhrArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="xhrPut">
+                        <description>Sends an HTTP PUT request to the server. In addtion to the properties listed for the dojo.__XhrArgs type, the following property is allowed: putData: String. Send raw data in the body of the PUT request.</description>
+                        <params>
+                            <param optional="False" type="dojo.__XhrArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="declare">
+                        <description>Create a feature-rich constructor from compact notation.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="className"/>
+                            <param optional="False" type="Function" name="superclass"/>
+                            <param optional="False" type="Function" name="props"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="cookie">
+                        <description>Get or set a cookie.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="name"/>
+                            <param optional="False" type="Function" name="value"/>
+                            <param optional="False" type="dojo.__cookieProps" name="props"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.back" disabled="False">
+        <interfaces>
+            <interface name="dojo.back" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="getHash"/>
+                    <attribute readonly="True" type="Properties" name="goBack"/>
+                    <attribute readonly="True" type="Properties" name="goForward"/>
+                    <attribute readonly="True" type="Properties" name="setHash"/>
+                </attributes>
+                <functions>
+                    <function returns="dojo" name="addToHistory">
+                        <description>Adds a state object (args) to the history list.</description>
+                        <params>
+                            <param optional="False" type="dojo.__backArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="init">
+                        <description>Initializes the undo stack. This must be called from a script block that lives inside the body tag to prevent bugs on IE.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo" name="setInitialState">
+                        <description>Sets the state object and back callback for the very first page that is loaded.</description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.cldr" disabled="False">
+        <interfaces>
+            <interface name="dojo.cldr.monetary" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="monetary"/>
+                    <attribute readonly="True" type="Properties" name="supplemental"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.cldr.monetary" disabled="False">
+        <interfaces>
+            <interface name="dojo.cldr.monetary" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="getData">
+                        <description>A mapping of currency code to currency-specific formatting information. Returns a unique object with properties: places, round.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="code"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.cldr.supplemental" disabled="False">
+        <interfaces>
+            <interface name="dojo.cldr.supplemental" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="getFirstDayOfWeek">
+                        <description>Returns a zero-based index for first day of the week.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                    <function returns="Object" name="getWeekend">
+                        <description>Returns a hash containing the start and end days of the weekend.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.colors" disabled="False">
+        <interfaces>
+            <interface name="dojo.colors" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="makeGrey">
+                        <description>creates a greyscale color with an optional alpha.</description>
+                        <params>
+                            <param optional="False" type="Number" name="g"/>
+                            <param optional="False" type="Number" name="a"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.config" disabled="False">
+        <interfaces>
+            <interface name="dojo.config" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="addOnLoad"/>
+                    <attribute readonly="True" type="Properties" name="baseRelativePath"/>
+                    <attribute readonly="True" type="Properties" name="baseUrl"/>
+                    <attribute readonly="True" type="Properties" name="consoleLogFuncs"/>
+                    <attribute readonly="True" type="Properties" name="debugContainerId"/>
+                    <attribute readonly="True" type="Properties" name="debugHeight"/>
+                    <attribute readonly="True" type="Properties" name="dojoBlankHtmlUrl"/>
+                    <attribute readonly="True" type="Properties" name="dojoIframeHistoryUrl"/>
+                    <attribute readonly="True" type="Properties" name="extraLocale"/>
+                    <attribute readonly="True" type="Properties" name="forceStorageProvider"/>
+                    <attribute readonly="True" type="Properties" name="libraryScriptUri"/>
+                    <attribute readonly="True" type="Properties" name="modulePaths"/>
+                    <attribute readonly="True" type="Properties" name="uploaderPath"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.cookie" disabled="False">
+        <interfaces>
+            <interface name="dojo.cookie" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="isSupported">
+                        <description>Use to determine if the current browser supports cookies or not. Returns true if user allows cookies. Returns false if user doesn't allow cookies.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.currency" disabled="False">
+        <interfaces>
+            <interface name="dojo.currency" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="format">
+                        <description>Format a Number as a currency, using locale-specific settings</description>
+                        <params>
+                            <param optional="False" type="Number" name="value"/>
+                            <param optional="False" type="dojo.number.__FormatOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="parse">
+                        <description>Convert a properly formatted currency string to a primitive Number, using locale-specific settings.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="expression"/>
+                            <param optional="False" type="dojo.currency.__ParseOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="String" name="regexp">
+                        <description>Builds the regular needed to parse a currency value</description>
+                        <params>
+                            <param optional="False" type="dojo.number.__RegexpOptions" name="options"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.data" disabled="False">
+        <interfaces>
+            <interface name="dojo.data" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="api"/>
+                    <attribute readonly="True" type="Properties" name="util"/>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="ItemFileReadStore">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="ItemFileWriteStore">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.data.api" disabled="False">
+        <interfaces>
+            <interface name="dojo.data.api" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="Identity">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Notification">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Read">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Request">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Write">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.data.util" disabled="False">
+        <interfaces>
+            <interface name="dojo.data.util" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="filter">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="simpleFetch">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="sorter">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="keywordParameters"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.date" disabled="False">
+        <interfaces>
+            <interface name="dojo.date" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="stamp"/>
+                    <attribute readonly="True" type="Properties" name="locale"/>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="add">
+                        <description>Add to a Date in intervals of different size, from milliseconds to years</description>
+                        <params>
+                            <param optional="False" type="Date" name="date"/>
+                            <param optional="False" type="DOMString" name="interval"/>
+                            <param optional="False" type="Integer" name="amount"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="compare">
+                        <description>Compare two date objects by date, time, or both.</description>
+                        <params>
+                            <param optional="False" type="Date" name="date1"/>
+                            <param optional="False" type="Date" name="date2"/>
+                            <param optional="False" type="DOMString" name="portion"/>
+                        </params>
+                    </function>
+                    <function returns="Number" name="difference">
+                        <description>Get the difference in a specific unit of time (e.g., number of months, weeks, days, etc.) between two dates, rounded to the nearest integer.</description>
+                        <params>
+                            <param optional="False" type="Date" name="date1"/>
+                            <param optional="False" type="Date" name="date2"/>
+                            <param optional="False" type="DOMString" name="interval"/>
+                        </params>
+                    </function>
+                    <function returns="Number" name="getDaysInMonth">
+                        <description>Returns the number of days in the month used by dateObject</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="getTimezoneName">
+                        <description>Get the user's time zone as provided by the browser</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                        </params>
+                    </function>
+                    <function returns="Boolean" name="isLeapYear">
+                        <description>Determines if the year of the dateObject is a leap year</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.date.locale" disabled="False">
+        <interfaces>
+            <interface name="dojo.date.locale" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="addCustomFormats">
+                        <description>Add a reference to a bundle containing localized custom formats to be used by date/time formatting and parsing routines.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="packageName"/>
+                            <param optional="False" type="DOMString" name="bundleName"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="displayPattern">
+                        <description>Provides a localized representation of a date/time pattern string</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="fixedPattern"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                    <function returns="Number" name="format">
+                        <description>Format a Date object as a String, using locale-specific settings.</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                            <param optional="False" type="dojo.date.locale.__FormatOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Number" name="getNames">
+                        <description>Used to get localized strings from dojo.cldr for day or month names.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="item"/>
+                            <param optional="False" type="DOMString" name="type"/>
+                            <param optional="False" type="DOMString" name="context"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="isWeekend">
+                        <description>Determines if the date falls on a weekend, according to local custom.</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                    <function returns="Boolean" name="parse">
+                        <description>Convert a properly formatted string to a primitive Date object, using locale-specific settings.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="value"/>
+                            <param optional="False" type="dojo.date.locale.__FormatOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Boolean" name="regexp">
+                        <description>Builds the regular needed to parse a localized date</description>
+                        <params>
+                            <param optional="False" type="dojo.date.locale.__FormatOptions" name="options"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.date.stamp" disabled="False">
+        <interfaces>
+            <interface name="dojo.date.stamp" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Date" name="fromISOString">
+                        <description>Returns a Date object given a string formatted according to a subset of the ISO-8601 standard.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="formattedString"/>
+                            <param optional="False" type="Number" name="defaultTime"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="toISOString">
+                        <description>Format a Date object as a string according a subset of the ISO-8601 standard</description>
+                        <params>
+                            <param optional="False" type="Date" name="dateObject"/>
+                            <param optional="False" type="dojo.date.stamp.__Options" name="options"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.dnd" disabled="False">
+        <interfaces>
+            <interface name="dojo.dnd" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="autoscroll"/>
+                    <attribute readonly="True" type="Properties" name="boxConstrainedMover"/>
+                    <attribute readonly="True" type="Properties" name="common"/>
+                    <attribute readonly="True" type="Properties" name="constrainedMover"/>
+                    <attribute readonly="True" type="Properties" name="H_AUTOSCROLL_VALUE"/>
+                    <attribute readonly="True" type="Properties" name="H_TRIGGER_AUTOSCROLL"/>
+                    <attribute readonly="True" type="Properties" name="parentConstrainedMover"/>
+                    <attribute readonly="True" type="Properties" name="V_AUTOSCROLL_VALUE"/>
+                    <attribute readonly="True" type="Properties" name="V_TRIGGER_AUTOSCROLL"/>
+                    <attribute readonly="True" type="Properties" name="move"/>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="AutoSource">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="dojo.dnd.__SourceArgs" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Avatar">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Container">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Manager">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Moveable">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Mover">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Selector">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Source">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="Target">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="DOMString" name="node"/>
+                            <param optional="False" type="dojo.dnd.__SourceArgs" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="TimedMoveable">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="autoScroll">
+                        <description>a handler for onmousemove event, which scrolls the window, if necesary</description>
+                        <params>
+                            <param optional="False" type="Event" name="e"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="autoScrollNodes">
+                        <description>a handler for onmousemove event, which scrolls the first avaialble Dom element, it falls back to dojo.dnd.autoScroll()</description>
+                        <params>
+                            <param optional="False" type="Event" name="e"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="getCopyKeyState">
+                        <description>abstracts away the difference between selection on Mac and PC, and returns the state of the "copy" key to be pressed.</description>
+                        <params>
+                            <param optional="False" type="Event" name="e"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="getUniqueId">
+                        <description>returns a unique string for use with any DOM element</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="object" name="getViewport">
+                        <description>returns a viewport size (visible part of the window)</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="boolean" name="isFormElement">
+                        <description>returns true, if user clicked on a form element</description>
+                        <params>
+                            <param optional="False" type="Event" name="e"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="manager">
+                        <description>returns the current DnD manager, creates one if it is not created yet</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.dnd.move" disabled="False">
+        <interfaces>
+            <interface name="dojo.dnd.move" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="boxConstrainedMoveable">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Node" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="constrainedMoveable">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="constrainedMover">
+                        <description>returns a constrained version of dojo.dnd.Mover</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="parentConstrainedMoveable">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Node" name="node"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="parentConstrainedMover">
+                        <description>a specialization of dojo.dnd.constrainedMover, which constrains to the parent node</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Object" name="boxConstrainedMover">
+                        <description>a specialization of dojo.dnd.constrainedMover, which constrains to the specified box</description>
+                        <params>
+                            <param optional="False" type="Object" name="box"/>
+                            <param optional="False" type="Boolean" name="within"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.doc" disabled="False">
+        <interfaces>
+            <interface name="dojo.doc" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="body"/>
+                    <attribute readonly="True" type="Properties" name="selection"/>
+                    <attribute readonly="True" type="Properties" name="styleSheets"/>
+                    <attribute readonly="True" type="Properties" name="documentElement"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.doc.documentElement" disabled="False">
+        <interfaces>
+            <interface name="dojo.doc.documentElement" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="className"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.doc.documentElement.style" disabled="False">
+        <interfaces>
+            <interface name="dojo.doc.documentElement.style" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="fontSize"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.fx" disabled="False">
+        <interfaces>
+            <interface name="dojo.fx" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="easing"/>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="Toggler">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="dojo._Animation" name="chain">
+                        <description>Chain a list of dojo._Animation s to run in sequence</description>
+                        <params>
+                            <param optional="False" type="dojo._Animation" name="animations"/>
+                        </params>
+                    </function>
+                    <function returns="dojo._Animation" name="combine">
+                        <description>Combine an array of dojo._Animations to run in parallel</description>
+                        <params>
+                            <param optional="False" type="dojo._Animation" name="animations"/>
+                        </params>
+                    </function>
+                    <function returns="dojo._Animation" name="slideTo">
+                        <description>Returns an animation that will slide "node" defined in args Object from its current position to the position defined by (args.left, args.top).</description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo._Animation" name="wipeIn">
+                        <description>Returns an animation that will expand the node defined in 'args' object from it's current height to it's natural height (with no scrollbar). Node must have no margin/border/padding.</description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="dojo._Animation" name="wipeOut">
+                        <description>Returns an animation that will shrink node defined in "args" from it's current height to 1px, and then hide it.</description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.gears" disabled="False">
+        <interfaces>
+            <interface name="dojo.gears" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="available"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.global" disabled="False">
+        <interfaces>
+            <interface name="dojo.global" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="getSelection"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.html" disabled="False">
+        <interfaces>
+            <interface name="dojo.html" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="set">
+                        <description>Inserts (replaces) the given content into the given node. dojo.place(cont, node, "only") may be a better choice for simple HTML insertion.</description>
+                        <params>
+                            <param optional="False" type="DOMNode" name="node"/>
+                            <param optional="False" type="DOMString" name="cont"/>
+                            <param optional="False" type="Object" name="params"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="html._ContentSetter">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.i18n" disabled="False">
+        <interfaces>
+            <interface name="dojo.i18n" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Object" name="getLocalization">
+                        <description>Returns an Object containing the localization for a given resource bundle in a package, matching the specified locale.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="packageName"/>
+                            <param optional="False" type="DOMString" name="bundleName"/>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="normalizeLocale">
+                        <description>Returns canonical form of locale, as used by Dojo.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="locale"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.io" disabled="False">
+        <interfaces>
+            <interface name="dojo.io" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="iframe"/>
+                    <attribute readonly="True" type="Properties" name="script"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.io.iframe" disabled="False">
+        <interfaces>
+            <interface name="dojo.io.iframe" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="send">
+                        <description>Function that sends the request to the server. This transport can only process one send() request at a time, so if send() is called multiple times, it will queue up the calls and only process one at a time.</description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="create">
+                        <description>Creates a hidden iframe in the page. Used mostly for IO transports. You do not need to call this to start a dojo.io.iframe request. Just call send().</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="fname"/>
+                            <param optional="False" type="DOMString" name="onloadstr"/>
+                            <param optional="False" type="DOMString" name="uri"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="doc">
+                        <description>Returns the document object associated with the iframe DOM Node argument.</description>
+                        <params>
+                            <param optional="False" type="DOMNode" name="iframeNode"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="setSrc">
+                        <description>Sets the URL that is loaded in an IFrame. The replace parameter indicates whether location.replace() should be used when changing the location of the iframe.</description>
+                        <params>
+                            <param optional="False" type="DOMNode" name="iframe"/>
+                            <param optional="False" type="DOMString" name="src"/>
+                            <param optional="False" type="Boolean" name="replace"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.io.script" disabled="False">
+        <interfaces>
+            <interface name="dojo.io.script" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="send">
+                        <description>creates a new script tag pointing to the specified URL and adds it to the document.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="DOMString" name="url"/>
+                            <param optional="False" type="Document" name="frameDocument"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="create">
+                        <description>Sends a get request using a dynamically created script tag.</description>
+                        <params>
+                            <param optional="False" type="dojo.io.script.__ioArgs" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="doc">
+                        <description>Removes the script element with the given id, from the given frameDocument. If no frameDocument is passed, the current document is used.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="id"/>
+                            <param optional="False" type="Document" name="frameDocument"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.keys" disabled="False">
+        <interfaces>
+            <interface name="dojo.keys" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="ALT"/>
+                    <attribute readonly="True" type="Properties" name="BACKSPACE"/>
+                    <attribute readonly="True" type="Properties" name="CAPS_LOCK"/>
+                    <attribute readonly="True" type="Properties" name="CLEAR"/>
+                    <attribute readonly="True" type="Properties" name="CTRL"/>
+                    <attribute readonly="True" type="Properties" name="DELETE"/>
+                    <attribute readonly="True" type="Properties" name="DOWN_ARROW"/>
+                    <attribute readonly="True" type="Properties" name="END"/>
+                    <attribute readonly="True" type="Properties" name="ENTER"/>
+                    <attribute readonly="True" type="Properties" name="ESCAPE"/>
+                    <attribute readonly="True" type="Properties" name="F1"/>
+                    <attribute readonly="True" type="Properties" name="F2"/>
+                    <attribute readonly="True" type="Properties" name="F3"/>
+                    <attribute readonly="True" type="Properties" name="F4"/>
+                    <attribute readonly="True" type="Properties" name="F5"/>
+                    <attribute readonly="True" type="Properties" name="F6"/>
+                    <attribute readonly="True" type="Properties" name="F7"/>
+                    <attribute readonly="True" type="Properties" name="F8"/>
+                    <attribute readonly="True" type="Properties" name="F10"/>
+                    <attribute readonly="True" type="Properties" name="F11"/>
+                    <attribute readonly="True" type="Properties" name="F12"/>
+                    <attribute readonly="True" type="Properties" name="F13"/>
+                    <attribute readonly="True" type="Properties" name="F14"/>
+                    <attribute readonly="True" type="Properties" name="F15"/>
+                    <attribute readonly="True" type="Properties" name="HELP"/>
+                    <attribute readonly="True" type="Properties" name="HOME"/>
+                    <attribute readonly="True" type="Properties" name="INSERT"/>
+                    <attribute readonly="True" type="Properties" name="LEFT_ARROW"/>
+                    <attribute readonly="True" type="Properties" name="LEFT_WINDOW"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_0"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_1"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_2"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_3"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_4"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_5"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_6"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_7"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_8"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_9"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_DIVIDE"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_ENTER"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_MINUS"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_MULTIPLY"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_PERIOD"/>
+                    <attribute readonly="True" type="Properties" name="NUMPAD_PLUS"/>
+                    <attribute readonly="True" type="Properties" name="NUM_LOCK"/>
+                    <attribute readonly="True" type="Properties" name="PAGE_DOWN"/>
+                    <attribute readonly="True" type="Properties" name="PAGE_UP"/>
+                    <attribute readonly="True" type="Properties" name="PAUSE"/>
+                    <attribute readonly="True" type="Properties" name="RIGHT_ARROW"/>
+                    <attribute readonly="True" type="Properties" name="RIGHT_WINDOW"/>
+                    <attribute readonly="True" type="Properties" name="SCROLL_LOCK"/>
+                    <attribute readonly="True" type="Properties" name="SELECT"/>
+                    <attribute readonly="True" type="Properties" name="SHIFT"/>
+                    <attribute readonly="True" type="Properties" name="SPACE"/>
+                    <attribute readonly="True" type="Properties" name="TAB"/>
+                    <attribute readonly="True" type="Properties" name="UP_ARROW"/>
+                </attributes>
+                <functions>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.number" disabled="False">
+        <interfaces>
+            <interface name="dojo.number" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="format">
+                        <description>Format a Number as a String, using locale-specific settings</description>
+                        <params>
+                            <param optional="False" type="Number" name="value"/>
+                            <param optional="False" type="dojo.number.__FormatOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="parse">
+                        <description>Convert a properly formatted string to a primitive Number, using locale-specific settings.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="expression"/>
+                            <param optional="False" type="dojo.number.__ParseOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="regexp">
+                        <description>Builds the regular needed to parse a number</description>
+                        <params>
+                            <param optional="False" type="dojo.number.__RegexpOptions" name="options"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="round">
+                        <description>Rounds to the nearest value with the given number of decimal places, away from zero.</description>
+                        <params>
+                            <param optional="False" type="Number" name="value"/>
+                            <param optional="False" type="Number" name="places"/>
+                            <param optional="False" type="Number" name="increment"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.regexp" disabled="False">
+        <interfaces>
+            <interface name="dojo.regexp" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="DOMString" name="buildGroupRE">
+                        <description>Builds a regular expression that groups subexpressions</description>
+                        <params>
+                            <param optional="False" type="Array" name="arr"/>
+                            <param optional="False" type="Function" name="re"/>
+                            <param optional="False" type="Boolean" name="nonCapture"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="escapeString">
+                        <description>Adds escape sequences for special characters in regular expressions</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="str"/>
+                            <param optional="False" type="DOMString" name="except"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="group">
+                        <description>Adds group match to expression</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="expression"/>
+                            <param optional="False" type="Boolean" name="nonCapture"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.rpc" disabled="False">
+        <interfaces>
+            <interface name="dojo.rpc" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="Dojo" name="JsonpService">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="JsonService">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="Object" name="args"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="RpcService">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.string" disabled="False">
+        <interfaces>
+            <interface name="dojo.string" extends="dojo">
+                <attributes>
+                </attributes>
+                <functions>
+                    <function returns="DOMString" name="pad">
+                        <description>Pad a string to guarantee that it is at least size length by filling with the character ch at either the start or end of the string. Pads at the start, by default.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="text"/>
+                            <param optional="False" type="Integer" name="size"/>
+                            <param optional="False" type="DOMString" name="ch"/>
+                            <param optional="False" type="Boolean" name="end"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="rep">
+                        <description>Efficiently replicate a string n times.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="str"/>
+                            <param optional="False" type="Integer" name="num"/>
+                        </params>
+                    </function>
+                    <function returns="Dojo" name="substitute">
+                        <description>Performs parameterized substitutions on a string. Throws an exception if any parameter is unmatched.</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="template"/>
+                            <param optional="False" type="Object" name="map"/>
+                            <param optional="False" type="Function" name="transform"/>
+                            <param optional="False" type="Object" name="thisObject"/>
+                        </params>
+                    </function>
+                    <function returns="DOMString" name="trim">
+                        <description>Trims whitespace from both sides of the string</description>
+                        <params>
+                            <param optional="False" type="DOMString" name="str"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+    <module name="dojo.version" disabled="False">
+        <interfaces>
+            <interface name="dojo.version" extends="dojo">
+                <attributes>
+                    <attribute readonly="True" type="Properties" name="flag"/>
+                    <attribute readonly="True" type="Properties" name="major"/>
+                    <attribute readonly="True" type="Properties" name="minor"/>
+                    <attribute readonly="True" type="Properties" name="patch"/>
+                    <attribute readonly="True" type="Properties" name="revision"/>
+                </attributes>
+                <functions>
+                    <function returns="DOMString" name="toString">
+                        <description>
+                        </description>
+                        <params>
+                            <param optional="False" type="void" name="void"/>
+                        </params>
+                    </function>
+                </functions>
+            </interface>
+        </interfaces>
+    </module>
+</javascript>
